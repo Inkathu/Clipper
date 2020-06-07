@@ -1,0 +1,1053 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="key1" xml:space="preserve">
+    <value>Ключ1</value>
+  </data>
+  <data name="key2" xml:space="preserve">
+    <value>Ключ2</value>
+  </data>
+  <data name="key3" xml:space="preserve">
+    <value>Ключ3</value>
+  </data>
+  <data name="LabelDelimiter" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="EnglishLanguage" xml:space="preserve">
+    <value>Английский</value>
+  </data>
+  <data name="RussianLanguage" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="SwedishLanguage" xml:space="preserve">
+    <value>Шведский</value>
+  </data>
+  <data name="Button_AddRemby" xml:space="preserve">
+    <value>Добавить на Remby</value>
+  </data>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Button_Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Button_CloseThisWindow" xml:space="preserve">
+    <value>Закрыть это окно</value>
+  </data>
+  <data name="Button_Continue" xml:space="preserve">
+    <value>Продолжить</value>
+  </data>
+  <data name="Button_Login" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="Button_Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Button_SaveChanges" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Options_Advanced" xml:space="preserve">
+    <value>Расширенные</value>
+  </data>
+  <data name="Options_Audio_Bitrate" xml:space="preserve">
+    <value>битрейт(Bits)</value>
+  </data>
+  <data name="Options_Audio_Bitspersample" xml:space="preserve">
+    <value>бит на образец</value>
+  </data>
+  <data name="Options_Audio_Channels" xml:space="preserve">
+    <value>Каналы</value>
+  </data>
+  <data name="Options_Audio_Sample" xml:space="preserve">
+    <value>Частота образца(Hz)</value>
+  </data>
+  <data name="Options_Audio_Title" xml:space="preserve">
+    <value>Звук</value>
+  </data>
+  <data name="Options_General" xml:space="preserve">
+    <value>Общие</value>
+  </data>
+  <data name="Options_Language_Title" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="Options_Language_UseIn" xml:space="preserve">
+    <value>Использовать RembyCollector с</value>
+  </data>
+  <data name="Options_LoggedIn" xml:space="preserve">
+    <value>Вошел как</value>
+  </data>
+  <data name="Options_LogOut" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="Options_NotLoggedIn" xml:space="preserve">
+    <value>Вход не выполнен</value>
+  </data>
+  <data name="Options_RembyAccount" xml:space="preserve">
+    <value>Remby аккаунт</value>
+  </data>
+  <data name="Options_Reset" xml:space="preserve">
+    <value>Сбросить</value>
+  </data>
+  <data name="Options_SaveDataError" xml:space="preserve">
+    <value>Возникла ошибка при сохранении конфигурации, пожалуйста убедитесь, что все измененные данные верны.</value>
+  </data>
+  <data name="Options_SettingsRestored" xml:space="preserve">
+    <value>Настройки сброшены до настроек по умолчанию</value>
+  </data>
+  <data name="Options_SignedOutNote" xml:space="preserve">
+    <value>Выход будет выполнен как только вы закроете приложение</value>
+  </data>
+  <data name="Options_StartWithWindows" xml:space="preserve">
+    <value>Загружать автоматически с Windows?</value>
+  </data>
+  <data name="Options_Title" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="Options_Video" xml:space="preserve">
+    <value>Захват Видео</value>
+  </data>
+  <data name="Options_Video_FrameRate" xml:space="preserve">
+    <value>Кадров в сек</value>
+  </data>
+  <data name="Options_Video_Title" xml:space="preserve">
+    <value>Видео</value>
+  </data>
+  <data name="Options_Video_YouTubePrivate" xml:space="preserve">
+    <value>Сделать видео приватным на YouTube?</value>
+  </data>
+  <data name="Options_Webcam_Device" xml:space="preserve">
+    <value>Устройство</value>
+  </data>
+  <data name="Options_Webcam_Title" xml:space="preserve">
+    <value>Веб-камера</value>
+  </data>
+  <data name="Remby" xml:space="preserve">
+    <value>Remby</value>
+  </data>
+  <data name="RembyClipper" xml:space="preserve">
+    <value>RembyCollector</value>
+  </data>
+  <data name="AllRightsReserved" xml:space="preserve">
+    <value>Все права защищены.</value>
+  </data>
+  <data name="ChangeTags" xml:space="preserve">
+    <value>Изменить теги</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="History_All" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="History_ChangeTagsError" xml:space="preserve">
+    <value>При попытке изменить теги на сервере произошла ошибка. Пожалуйста, попробуйте повторить операцию позже.</value>
+  </data>
+  <data name="History_Files" xml:space="preserve">
+    <value>Файлы</value>
+  </data>
+  <data name="History_FilterOnTags" xml:space="preserve">
+    <value>Фильтровать по тегам</value>
+  </data>
+  <data name="History_Images" xml:space="preserve">
+    <value>Изображения</value>
+  </data>
+  <data name="History_ListTitle" xml:space="preserve">
+    <value>История</value>
+  </data>
+  <data name="History_Refresh" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="History_Screenshot" xml:space="preserve">
+    <value>Изображение</value>
+  </data>
+  <data name="History_Screenshots" xml:space="preserve">
+    <value>Снимки экрана</value>
+  </data>
+  <data name="History_Screenvideo" xml:space="preserve">
+    <value>Видео</value>
+  </data>
+  <data name="History_SelectElementToShare" xml:space="preserve">
+    <value>Пожалуйста укажите элемент, которым вы хотите поделиться.</value>
+  </data>
+  <data name="History_ShowAll" xml:space="preserve">
+    <value>Показать все</value>
+  </data>
+  <data name="History_ShowFiles" xml:space="preserve">
+    <value>Показать файлы</value>
+  </data>
+  <data name="History_ShowImages" xml:space="preserve">
+    <value>Показать изображения</value>
+  </data>
+  <data name="History_ShowScreenShots" xml:space="preserve">
+    <value>Показать снимки экранов</value>
+  </data>
+  <data name="History_ShowTexts" xml:space="preserve">
+    <value>Показать тексты</value>
+  </data>
+  <data name="History_ShowVideos" xml:space="preserve">
+    <value>Показать видео</value>
+  </data>
+  <data name="History_Text" xml:space="preserve">
+    <value>Текст</value>
+  </data>
+  <data name="History_Texts" xml:space="preserve">
+    <value>Тексты</value>
+  </data>
+  <data name="History_Title" xml:space="preserve">
+    <value>История</value>
+  </data>
+  <data name="History_Videos" xml:space="preserve">
+    <value>Видео</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Изображение</value>
+  </data>
+  <data name="OCR" xml:space="preserve">
+    <value>ОРС</value>
+  </data>
+  <data name="OCR_FormTitle" xml:space="preserve">
+    <value>Remby Оптическое Распознавание Символов(ОРС) Изображения</value>
+  </data>
+  <data name="OCR_HowToImprove" xml:space="preserve">
+    <value>Как улучшить качество ОРС</value>
+  </data>
+  <data name="OCR_Quality" xml:space="preserve">
+    <value>Качество ОРС</value>
+  </data>
+  <data name="OCR_TextCopied" xml:space="preserve">
+    <value>Текст скопирован в буфер обмена</value>
+  </data>
+  <data name="OCR_Tips" xml:space="preserve">
+    <value>Оптическое Распознавание Символов, ОСР, работает лучше с черным текстом на белом фоне и там где размер текста 12пунктов или больше. 
+В основном, простые шрифты считываются лучше, чем аккуратные написанные от руки.
+Картинка внутри захваченного изображения иногда интерпретируется как текст и в итоге получаются бессмысленные символы.
+Для лучшего результата сделайте следующее:
+-Удостоверьтесь, что вы копируете только 1 колонку за раз
+-Копируйте со страниц, где текст 12пунктов и больше
+-Копируйте со страниц с простыми шрифтами. Избегайте рукописного текста.
+-Копируйте только текст и избегайте попадания изображений в область захвата.</value>
+  </data>
+  <data name="OCR_Title1" xml:space="preserve">
+    <value>Извлеченный текст</value>
+  </data>
+  <data name="OCR_Title2" xml:space="preserve">
+    <value>(мы будем использовать этот текст для индексирования изображений на Remby)</value>
+  </data>
+  <data name="RembyLink" xml:space="preserve">
+    <value>www.remby.com</value>
+  </data>
+  <data name="ShareThis" xml:space="preserve">
+    <value>Поделиться</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Источник</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Теги</value>
+  </data>
+  <data name="TextType" xml:space="preserve">
+    <value>Текст</value>
+  </data>
+  <data name="ToolTip_Copy" xml:space="preserve">
+    <value>Скопировать в буфер обмена</value>
+  </data>
+  <data name="ToolTip_OCR" xml:space="preserve">
+    <value>Показать ОРС</value>
+  </data>
+  <data name="ToolTip_Save" xml:space="preserve">
+    <value>Сохранить файл</value>
+  </data>
+  <data name="TopNav_AddNewBook" xml:space="preserve">
+    <value>Добавить новую книгу</value>
+  </data>
+  <data name="TopNav_Canceled" xml:space="preserve">
+    <value>Отменено...</value>
+  </data>
+  <data name="TopNav_CancelUploading" xml:space="preserve">
+    <value>Отменить загрузку</value>
+  </data>
+  <data name="TopNav_Capture" xml:space="preserve">
+    <value>Захват изображения</value>
+  </data>
+  <data name="TopNav_ChangeTagsWithParam" xml:space="preserve">
+    <value>Теги: {0} Изменить? {1:2}</value>
+  </data>
+  <data name="TopNav_CheckForUpdates" xml:space="preserve">
+    <value>Проверить обновление</value>
+  </data>
+  <data name="TopNav_ClickToAddTagWithParam" xml:space="preserve">
+    <value>Нажмите что бы добавить тег {0:2}</value>
+  </data>
+  <data name="TopNav_Close" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="TopNav_DragAndDropDoesntSupported" xml:space="preserve">
+    <value>Этот тип объектов не поддерживается RembyCollector.</value>
+  </data>
+  <data name="TopNav_EditBook" xml:space="preserve">
+    <value>Редактировать Книгу на Remby</value>
+  </data>
+  <data name="TopNav_Error" xml:space="preserve">
+    <value>Проблема с сервером, повторите операцию позже</value>
+  </data>
+  <data name="TopNav_Exit" xml:space="preserve">
+    <value>Вы уверены что хотите выйти из RembyCollector?</value>
+  </data>
+  <data name="TopNav_Hi" xml:space="preserve">
+    <value>Здравствуйте</value>
+  </data>
+  <data name="TopNav_History" xml:space="preserve">
+    <value>История</value>
+  </data>
+  <data name="TopNav_HistoryRefreshed" xml:space="preserve">
+    <value>История обновлена</value>
+  </data>
+  <data name="TopNav_HistoryRefreshing" xml:space="preserve">
+    <value>История (обновляется)</value>
+  </data>
+  <data name="TopNav_OpenLogFolder" xml:space="preserve">
+    <value>Открыть директорию лога</value>
+  </data>
+  <data name="TopNav_SendLogViaSkype" xml:space="preserve">
+    <value>Отправить лог через скайп</value>
+  </data>
+  <data name="TopNav_SendSkypeMessageWithParam" xml:space="preserve">
+    <value>Отладочная информация сохранена на рабочий стоил в файле: {0}
+После того, как нажмете ОК, пожалуйста отошлите этот файл нам с помощью Skype. Спасибо.</value>
+  </data>
+  <data name="TopNav_ShortenUrlCopiedToClipBoardWithParam" xml:space="preserve">
+    <value>Короткая ссылка URL: {0} была скопирована в буфер обмена.</value>
+  </data>
+  <data name="TopNav_ShowDebugLog" xml:space="preserve">
+    <value>Показать отладочный лог</value>
+  </data>
+  <data name="TopNav_Text" xml:space="preserve">
+    <value>Текст</value>
+  </data>
+  <data name="TopNav_Uploaded" xml:space="preserve">
+    <value>Загружен(о)</value>
+  </data>
+  <data name="TopNav_Uploading" xml:space="preserve">
+    <value>Загрузка</value>
+  </data>
+  <data name="TopNav_Video" xml:space="preserve">
+    <value>Захват видео</value>
+  </data>
+  <data name="TopNav_WereUploaded" xml:space="preserve">
+    <value>были загружены</value>
+  </data>
+  <data name="TopNav_YouTubeDescription" xml:space="preserve">
+    <value>RembyСlipper загруженное видео</value>
+  </data>
+  <data name="TopNav_YouTubeTitle" xml:space="preserve">
+    <value>Загруженное видео</value>
+  </data>
+  <data name="Tray_About" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="Tray_Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="Tray_GettingStarted" xml:space="preserve">
+    <value>Приступая к работе</value>
+  </data>
+  <data name="Tray_Options" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Версия</value>
+  </data>
+  <data name="Video" xml:space="preserve">
+    <value>Видео</value>
+  </data>
+  <data name="Windows_Open" xml:space="preserve">
+    <value>Открыть окна</value>
+  </data>
+  <data name="Windows_Screenshot" xml:space="preserve">
+    <value>Снимок экрана</value>
+  </data>
+  <data name="Windows_Screenvideo" xml:space="preserve">
+    <value>Видео</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Текст</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Загрузить</value>
+  </data>
+  <data name="Button_Next" xml:space="preserve">
+    <value>Дальше</value>
+  </data>
+  <data name="Error_InvalidCredentials" xml:space="preserve">
+    <value>Неверный ввод</value>
+  </data>
+  <data name="Error_LoadingVideo" xml:space="preserve">
+    <value>Произошла ошибка при попытке открытия видео.</value>
+  </data>
+  <data name="Error_VideoUpload" xml:space="preserve">
+    <value>Произошла ошибка в процессе загрузки видео.</value>
+  </data>
+  <data name="FirstUserExperence_dontshow" xml:space="preserve">
+    <value>Не показывать в слудующий раз.</value>
+  </data>
+  <data name="FirstUserExperience_body1" xml:space="preserve">
+    <value>На следующем шаге, мы попросим Вас войти под вашим YouTube аккаунтом или создать новый.</value>
+  </data>
+  <data name="FirstUserExperience_body2" xml:space="preserve">
+    <value>После загрузки видео, Вы можете использовать его на Remby выбрав "Video" на панели инструментов.</value>
+  </data>
+  <data name="FirstUserExperience_FormTitle" xml:space="preserve">
+    <value>Remby экранное видео</value>
+  </data>
+  <data name="FirstUserExperience_title" xml:space="preserve">
+    <value>Что бы добавить видео на Remby, Вам нужно загрузить его на YouTube</value>
+  </data>
+  <data name="GettingStarted_DidYouKnow" xml:space="preserve">
+    <value>Знаете ли вы что?</value>
+  </data>
+  <data name="GettingStarted_DontShowAgain" xml:space="preserve">
+    <value>Не показывать при следующем запуске</value>
+  </data>
+  <data name="GettingStarted_Note1" xml:space="preserve">
+    <value>Что все, что вы перенесете на серую R иконку, вверху экрана, будет доступно в "My Stuff" панели на сайте. Оттуда вы легко можете добавить это на страницы вашей книги.
+
+Попробуйте перенести картинку, текст с веб страницы или файл с вашего рабочего стола.</value>
+  </data>
+  <data name="GettingStarted_Note2" xml:space="preserve">
+    <value>Что все содержимое, которое вы загрузили, будет доступено в My Stuff панели.</value>
+  </data>
+  <data name="GettingStarted_Note3" xml:space="preserve">
+    <value>Что вы можете использовать клавиатуру для быстрого снятия снимков экрана или для начала записи видео?</value>
+  </data>
+  <data name="GettingStarted_Note4" xml:space="preserve">
+    <value>Что пока идет запись видео, вы можете двигать изображение, выводимое с вебкамеры? И даже если вы передвинете его за зону записи видео, оно не будет отображаться на записи.</value>
+  </data>
+  <data name="GettingStarted_Note5" xml:space="preserve">
+    <value>Что пока идет запись видео с экрана, вы можете двигать область записи? Просто перетяните нижнюю панель в любую область, которую хотите записать. Вы так же можете двигать картинку в картинке (вывод с вебкамеры) или полностью ее отключить. Проведите мышей над видео с вебкамеры, что бы увидеть возможные действия.</value>
+  </data>
+  <data name="RembyLogin_CreateAccount" xml:space="preserve">
+    <value>Перейти на Remby для создания аккаунта</value>
+  </data>
+  <data name="RembyLogin_DontHaveAccount" xml:space="preserve">
+    <value>Нет Remby аккаунта?</value>
+  </data>
+  <data name="RembyLogin_Password" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="RembyLogin_RememberMe" xml:space="preserve">
+    <value>Запомнить меня?</value>
+  </data>
+  <data name="RembyLogin_Title" xml:space="preserve">
+    <value>Войдите под своим Remby аккаунтом</value>
+  </data>
+  <data name="RembyLogin_Username" xml:space="preserve">
+    <value>Имя пользователя или email</value>
+  </data>
+  <data name="RembyVideo_Category" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="RembyVideo_CompeteTags" xml:space="preserve">
+    <value>Пожалуйста, заполните теги.</value>
+  </data>
+  <data name="RembyVideo_CompleteDescription" xml:space="preserve">
+    <value>Пожалуйста, заполните описание.</value>
+  </data>
+  <data name="RembyVideo_CompleteTitle" xml:space="preserve">
+    <value>Пожалуйста, заполните название.</value>
+  </data>
+  <data name="RembyVideo_Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="RembyVideo_TagsText" xml:space="preserve">
+    <value>Remby, Screen video</value>
+  </data>
+  <data name="RembyVideo_Title" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="RembyVideo_TitleText" xml:space="preserve">
+    <value>Remby экранное видео -</value>
+  </data>
+  <data name="RembyVideo_WindowTitle" xml:space="preserve">
+    <value>RembyCollector экранное видео</value>
+  </data>
+  <data name="RembyVideo_YouTubeLegal" xml:space="preserve">
+    <value>Загружая свое видео, Вы подтверждаете что имеете права на содержимое или то что вы авторизованы правообладателем делать данное видео публичным на YouTube и что оно соответствует соглашениям предоставления услуг YouTube.</value>
+  </data>
+  <data name="RembyYouTubeLogin_CreateAccount" xml:space="preserve">
+    <value>Перейти на YouTube что бы создать аккаунт</value>
+  </data>
+  <data name="RembyYouTubeLogin_DontHaveAccount" xml:space="preserve">
+    <value>Нет YouTube аккаунта ?</value>
+  </data>
+  <data name="RembyYouTubeLogin_FreeUserTitle" xml:space="preserve">
+    <value>Как для бесплатного пользователя, ваше видео будет сохранено на YouTube</value>
+  </data>
+  <data name="RembyYouTubeLogin_KeepLoggedIn" xml:space="preserve">
+    <value>Мы будем держать сессию открытой до выхода из 
+RembyCollector. Мы не сохраним ваш пароль. Обещаем!</value>
+  </data>
+  <data name="RembyYouTubeLogin_Title" xml:space="preserve">
+    <value>Пожалуйста, войдите под своим YouTube аккаунтом.</value>
+  </data>
+  <data name="VideoRecorder_CloseCam" xml:space="preserve">
+    <value>Отключить вывод видео камеры</value>
+  </data>
+  <data name="VideoRecorder_MuteMic" xml:space="preserve">
+    <value>Выключить микрофон</value>
+  </data>
+  <data name="VideoRecorder_OpenCam" xml:space="preserve">
+    <value>Включить вывод видео камеры</value>
+  </data>
+  <data name="VideoRecorder_StartRecording" xml:space="preserve">
+    <value>Начать запись</value>
+  </data>
+  <data name="VideoRecorder_StopRecording" xml:space="preserve">
+    <value>Остановить запись</value>
+  </data>
+  <data name="VideoRecorder_UnmutMic" xml:space="preserve">
+    <value>Включить микрофон</value>
+  </data>
+  <data name="Capture_MarkArea" xml:space="preserve">
+    <value>Пометьте область для захвата</value>
+  </data>
+  <data name="RembyScreenshot_CopiedToClipboard" xml:space="preserve">
+    <value>Изображение скопировано в буфер обмена</value>
+  </data>
+  <data name="RembyScrennshot_WindowTitle" xml:space="preserve">
+    <value>RembyCollector {0}</value>
+  </data>
+  <data name="RembyText_WindowTitle" xml:space="preserve">
+    <value>RembyCollector текст</value>
+  </data>
+  <data name="Remby_Login_Title" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="VideoRecorder_ZoomIn" xml:space="preserve">
+    <value>Увеличить  картинку в картинке</value>
+  </data>
+  <data name="VideoRecorder_ZoomOut" xml:space="preserve">
+    <value>Уменьшить картинку в картинке</value>
+  </data>
+  <data name="Options_Login" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="History_Expand_List_Button" xml:space="preserve">
+    <value>Еще</value>
+  </data>
+  <data name="History_Items_Count" xml:space="preserve">
+    <value>Записи: 1-{0} из {1}</value>
+  </data>
+  <data name="History_Select_To_Change_Tags" xml:space="preserve">
+    <value>Для изменения тегов выберите элемент</value>
+  </data>
+  <data name="AddArrow" xml:space="preserve">
+    <value>Добавить стрелку</value>
+  </data>
+  <data name="AddCircle" xml:space="preserve">
+    <value>Добавить окружность</value>
+  </data>
+  <data name="AddRectangle" xml:space="preserve">
+    <value>Добавить прямоугольник</value>
+  </data>
+  <data name="AddText" xml:space="preserve">
+    <value>Добавить текст</value>
+  </data>
+  <data name="Arrow" xml:space="preserve">
+    <value>Стрелка</value>
+  </data>
+  <data name="BorderColor" xml:space="preserve">
+    <value>Цвет границы</value>
+  </data>
+  <data name="BorderOpacity" xml:space="preserve">
+    <value>Затемненность границы</value>
+  </data>
+  <data name="BorderSizyType" xml:space="preserve">
+    <value>пт</value>
+  </data>
+  <data name="BorderWidth" xml:space="preserve">
+    <value>Размер границы</value>
+  </data>
+  <data name="BringForward" xml:space="preserve">
+    <value>Поднять выше</value>
+  </data>
+  <data name="BringToFront" xml:space="preserve">
+    <value>Поднять наверх</value>
+  </data>
+  <data name="ChangeBorderColor" xml:space="preserve">
+    <value>Изменить цвет границы</value>
+  </data>
+  <data name="ChangeBorderWidth" xml:space="preserve">
+    <value>Изменить размер границы</value>
+  </data>
+  <data name="ChangeFigureOpacity" xml:space="preserve">
+    <value>Изменить затемненность фигуры</value>
+  </data>
+  <data name="ChangeFiguresOrder" xml:space="preserve">
+    <value>Изменить порядок фигур</value>
+  </data>
+  <data name="ChangeFillColor" xml:space="preserve">
+    <value>Изменить цвет заливки</value>
+  </data>
+  <data name="ChangeTextColor" xml:space="preserve">
+    <value>Изменить цвет текста</value>
+  </data>
+  <data name="ChangeTextFont" xml:space="preserve">
+    <value>Изменить шрифт текста</value>
+  </data>
+  <data name="Circle" xml:space="preserve">
+    <value>Окружность</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>Клонировать</value>
+  </data>
+  <data name="CloneSelectedFigure" xml:space="preserve">
+    <value>Клонировать выделнную фигуру</value>
+  </data>
+  <data name="FigureName" xml:space="preserve">
+    <value>Фигура</value>
+  </data>
+  <data name="FillColor" xml:space="preserve">
+    <value>Цвет заливки</value>
+  </data>
+  <data name="FillOpacity" xml:space="preserve">
+    <value>Затемненность заливки</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>Шрифт</value>
+  </data>
+  <data name="FontColor" xml:space="preserve">
+    <value>Цвет шрифта</value>
+  </data>
+  <data name="NoBorder" xml:space="preserve">
+    <value>нет</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Opacity" xml:space="preserve">
+    <value>Затемненность</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Свойства</value>
+    <comment>properties window caption</comment>
+  </data>
+  <data name="Rectangle" xml:space="preserve">
+    <value>Прямоугольник</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="RemoveFigure" xml:space="preserve">
+    <value>Удалить выделенную фигуру</value>
+  </data>
+  <data name="Reorder" xml:space="preserve">
+    <value>Реорганизация</value>
+  </data>
+  <data name="SendBackward" xml:space="preserve">
+    <value>Опустить ниже</value>
+  </data>
+  <data name="SendToBack" xml:space="preserve">
+    <value>Отправить назад</value>
+  </data>
+  <data name="TextFigureText" xml:space="preserve">
+    <value>Для редактирования текста нажмите F2 или выполните двойной щелчок мыши.</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Показывать</value>
+  </data>
+  <data name="ColorDialog_ApplyBtn" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="ColorDialog_Blue" xml:space="preserve">
+    <value>Синий</value>
+  </data>
+  <data name="ColorDialog_Green" xml:space="preserve">
+    <value>Зеленый</value>
+  </data>
+  <data name="ColorDialog_HTMLColor" xml:space="preserve">
+    <value>Цвет HTML</value>
+  </data>
+  <data name="ColorDialog_Opacity" xml:space="preserve">
+    <value>Затемненность</value>
+  </data>
+  <data name="ColorDialog_RecentColors" xml:space="preserve">
+    <value>Недавние цвета</value>
+  </data>
+  <data name="ColorDialog_Red" xml:space="preserve">
+    <value>Красный</value>
+  </data>
+  <data name="ColorDialog_title" xml:space="preserve">
+    <value>Настройка цвета</value>
+  </data>
+  <data name="TopNav_GoToMyBooks" xml:space="preserve">
+    <value>Перейти в Мои Remby Книги</value>
+  </data>
+  <data name="TopNav_GoToMyStuff" xml:space="preserve">
+    <value>Перейти к созданию книги</value>
+  </data>
+  <data name="Options_MsgBoxPlacement" xml:space="preserve">
+    <value>Место вывод  статусных сообщений</value>
+  </data>
+  <data name="Options_placeAt" xml:space="preserve">
+    <value>Паказать в</value>
+  </data>
+  <data name="Place_BottomRight" xml:space="preserve">
+    <value>Нижнем правом углу</value>
+  </data>
+  <data name="Place_NearIcon" xml:space="preserve">
+    <value>Рядом с R иконкой</value>
+  </data>
+  <data name="Place_TopRight" xml:space="preserve">
+    <value>Верхнем правом углу</value>
+  </data>
+  <data name="Button_Browse" xml:space="preserve">
+    <value>Обзор</value>
+  </data>
+  <data name="FileUpload_Title" xml:space="preserve">
+    <value>Загрузка файлов</value>
+  </data>
+  <data name="TopNav_Upload" xml:space="preserve">
+    <value>Загрузка файлов</value>
+  </data>
+  <data name="FileUpload_HelpLabel" xml:space="preserve">
+    <value>Нажмите "Обзор" что бы выбрать файлы для загрузки</value>
+  </data>
+  <data name="InfoBox_File" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="InfoBox_Link" xml:space="preserve">
+    <value>Ссылка</value>
+  </data>
+  <data name="InfoBox_ScreenShoot" xml:space="preserve">
+    <value>Снимок экрана</value>
+  </data>
+  <data name="InfoBox_Text" xml:space="preserve">
+    <value>Текст</value>
+  </data>
+  <data name="InfoBox_UploadingWithParam" xml:space="preserve">
+    <value>Загрузка - {0}</value>
+  </data>
+  <data name="InfoBox_Files" xml:space="preserve">
+    <value>Файлы</value>
+  </data>
+  <data name="InfoBox_Video" xml:space="preserve">
+    <value>Видео</value>
+  </data>
+  <data name="AccountType_Basic" xml:space="preserve">
+    <value>Бесплатный (Free)</value>
+  </data>
+  <data name="AccountType_Plus" xml:space="preserve">
+    <value>Премиум (Plus)</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Options_Account_FileSizeLimitLabel" xml:space="preserve">
+    <value>Размер файла(max)</value>
+  </data>
+  <data name="Options_Account_StorageSizeLimitLabel" xml:space="preserve">
+    <value>Размер хранилища(max)</value>
+  </data>
+  <data name="Options_Account_SubcriptionLabel" xml:space="preserve">
+    <value>Тип подписки</value>
+  </data>
+  <data name="Options_Account_TabTitle" xml:space="preserve">
+    <value>Мой аккаунт</value>
+  </data>
+  <data name="Options_Account_UpdatePeriodLabel" xml:space="preserve">
+    <value>Проверять через</value>
+  </data>
+  <data name="Options_Account_UpdatePolicyLabel" xml:space="preserve">
+    <value>Политика обновлений работающего приложения</value>
+  </data>
+  <data name="Options_Account_UpgradeBtn" xml:space="preserve">
+    <value>Улучшить</value>
+  </data>
+  <data name="Options_Account_UserIdLabel" xml:space="preserve">
+    <value>ID Пользователя</value>
+  </data>
+  <data name="Options_Update_EveryDay" xml:space="preserve">
+    <value>Каждый день</value>
+  </data>
+  <data name="Options_Update_EveryHour" xml:space="preserve">
+    <value>Каждый час</value>
+  </data>
+  <data name="Options_Update_EveryWeek" xml:space="preserve">
+    <value>Каждую неделю</value>
+  </data>
+  <data name="Options_Update_Never" xml:space="preserve">
+    <value>Никогда</value>
+  </data>
+  <data name="RembyFileUpload_WindowTitle" xml:space="preserve">
+    <value>RembyCollector загрузка файлов</value>
+  </data>
+  <data name="RestartApplicationText" xml:space="preserve">
+    <value>Перезапуск приложения</value>
+  </data>
+  <data name="TopNav_CancelCurrent" xml:space="preserve">
+    <value>Отменить текущую</value>
+  </data>
+  <data name="TopNav_CancellAllUploading" xml:space="preserve">
+    <value>Отменить всё</value>
+  </data>
+  <data name="TopNav_ClearHistory" xml:space="preserve">
+    <value>Очистить все</value>
+  </data>
+  <data name="TopNav_ClearList" xml:space="preserve">
+    <value>Очистить список</value>
+  </data>
+  <data name="TopNav_CurrentUploadingQueue" xml:space="preserve">
+    <value>Текущая очередь загрузки</value>
+  </data>
+  <data name="TopNav_RecentUploadingItems" xml:space="preserve">
+    <value>Недавние загрузки</value>
+  </data>
+  <data name="TopNav_UpdateErrorMessage" xml:space="preserve">
+    <value>Произошла ошибка при попытке обновить приложение.</value>
+  </data>
+  <data name="Update_AvailableMessageWithQuestion" xml:space="preserve">
+    <value>Доступно обновление. Вы хотите обновить приложение сейчас?</value>
+  </data>
+  <data name="Update_AvailableText" xml:space="preserve">
+    <value>Доступно обновление</value>
+  </data>
+  <data name="Update_Cancelled" xml:space="preserve">
+    <value>Обновление было отменено.</value>
+  </data>
+  <data name="Update_CouldNotInstallLatestVersionWithParam" xml:space="preserve">
+    <value>Невозможно установить последнюю версию приложения. Причина: \n{0}\nПожалуйста, сообщите об этой ошибке системному администратору.</value>
+  </data>
+  <data name="Update_LatestVersionRunning" xml:space="preserve">
+    <value>Вы используете самую последнюю версию RembyCollector.</value>
+  </data>
+  <data name="Update_MandatoryUpdateWithParam" xml:space="preserve">
+    <value>Приложение обнаружило обязательное обновление с текущей версии до версии {0}. Сейчас будет установлено обновление и произведен перезапуск приложения.</value>
+  </data>
+  <data name="Update_NewVersionCouldNotBeRetreivedWithParam" xml:space="preserve">
+    <value>Невозможно получить новую версию приложения. Причина:
+{0}.
+Попробуйте повторить попытку позже.</value>
+  </data>
+  <data name="Update_UpdateToLatestVerWasCancelled" xml:space="preserve">
+    <value>Обновление до последней версии было отменено.</value>
+  </data>
+  <data name="Update_WouldYouLikeToRestartMessage" xml:space="preserve">
+    <value>Приложение было обновлено. Выполнить перезапуск? (Если не выполнить перезапуск сейчас, то вы продолжите использовать текущую версию до следующего перезапуска)</value>
+  </data>
+  <data name="TopNav_UnsupportedExtension" xml:space="preserve">
+    <value>Unsupproted extension - {0} ({1})</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="AccountType_Unknown" xml:space="preserve">
+    <value>Неизвестно</value>
+  </data>
+  <data name="NotificationDontShowAgain" xml:space="preserve">
+    <value>Не показывать это сообщение</value>
+  </data>
+  <data name="ContextMessageFileDragging" xml:space="preserve">
+    <value>Знаете ли вы что, вы можете перетянуть файлы на R иконку для их выгрузки?</value>
+  </data>
+  <data name="ContextMessageRandom" xml:space="preserve">
+    <value>Знаете ли вы, что вы можете добавлять материалы прямо на странице с помощью кнопки редактора "Добавить"?</value>
+  </data>
+  <data name="ContextMessageUploadVideoFile" xml:space="preserve">
+    <value>Используйте видео с  YouTube добавив его на странице редактора или перетягивайте видео прямо на иконку RembyCollector.</value>
+  </data>
+  <data name="ContextMessageYouTubeRecording" xml:space="preserve">
+    <value>Знаете ли вы что, вы можете перетянуть видео на R-иконку для выгрузки в Мои Материалы?</value>
+  </data>
+  <data name="GettingStarted_Button_Close" xml:space="preserve">
+    <value>Закрыть окно</value>
+  </data>
+  <data name="Button_Reselect" xml:space="preserve">
+    <value>Заново</value>
+  </data>
+  <data name="OneClickScreenShot_Text" xml:space="preserve">
+    <value>Для того что бы выделить область: 
+1. Нажмите и удерживайте кнопку мыши в левом верхнем углу желаемой области
+2. Переместите указатель в нижний правый угол области
+3. Отпустите кнопку мыши
+</value>
+  </data>
+  <data name="OneClickScreenShot_Title" xml:space="preserve">
+    <value>Вы кликнули 1 раз и RembyCollector сделал скриншот всего экрана.</value>
+  </data>
+  <data name="Attention" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="YouTube_InvalidCredentials" xml:space="preserve">
+    <value>Неверный логин или пароль YouTube</value>
+  </data>
+  <data name="YouTube_ValidationError" xml:space="preserve">
+    <value>Ошибка валидации данных. Пожалуйста проверьте заголовок, теги и т.д.</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Копия</value>
+  </data>
+  <data name="ShareTo" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="TypeYourTextHere" xml:space="preserve">
+    <value>Введите текст</value>
+  </data>
+  <data name="SuccessShare_AvailableAt" xml:space="preserve">
+    <value>и доступен(но) по адресу:</value>
+  </data>
+  <data name="AnnotateBubble" xml:space="preserve">
+    <value>Аннотация</value>
+  </data>
+  <data name="AddAnnotateBubble" xml:space="preserve">
+    <value>Добавить аннотацию</value>
+  </data>
+  <data name="InfoBox_Uploading" xml:space="preserve">
+    <value>Загружаем данные на сервер</value>
+  </data>
+  <data name="NotificationsAreaWrongPlace" xml:space="preserve">
+    <value>Положение области уведомлений изменилось для правильного отображения уведомлений.</value>
+  </data>
+  <data name="ScreenshotTextParam" xml:space="preserve">
+    <value>Снимок экрана {0} в {1}</value>
+  </data>
+  <data name="DescriptionText" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="LinkTooIsToLong" xml:space="preserve">
+    <value>Слишком длинная ссылка. Нельзя загружать ссылки длинной более 500 символов.</value>
+  </data>
+  <data name="TagIsAlreadyUsed" xml:space="preserve">
+    <value>Тэг уже используется</value>
+  </data>
+  <data name="not_authorized" xml:space="preserve">
+    <value>Нет авторизации на сервере. Пожалуйста перезапустите приложение.</value>
+  </data>
+  <data name="unsupported_media_type" xml:space="preserve">
+    <value>Тип данных не поддерживается</value>
+  </data>
+  <data name="IE_Not_Supported" xml:space="preserve">
+    <value>Перетаскивание не работает из Internet Explorer. Используйте Chrome, Firefox или Safari.</value>
+  </data>
+</root>

@@ -1,0 +1,8 @@
+D:\Work\Remby\Mercurial\collector\trunk\Localization\bin\x86\Release\Localization.dll
+D:\Work\Remby\Mercurial\collector\trunk\Localization\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Work\Remby\Mercurial\collector\trunk\Localization\obj\x86\Release\Localization.English.resources
+D:\Work\Remby\Mercurial\collector\trunk\Localization\obj\x86\Release\Localization.Russian.resources
+D:\Work\Remby\Mercurial\collector\trunk\Localization\obj\x86\Release\Localization.Swedish.resources
+D:\Work\Remby\Mercurial\collector\trunk\Localization\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\Work\Remby\Mercurial\collector\trunk\Localization\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\Work\Remby\Mercurial\collector\trunk\Localization\obj\x86\Release\Localization.dll

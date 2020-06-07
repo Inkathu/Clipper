@@ -1,0 +1,14 @@
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\bin\Debug\RembyUninstaller.exe.config
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\bin\Debug\RembyUninstaller.exe.manifest
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\bin\Debug\RembyUninstaller.application
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\bin\Debug\RembyUninstaller.exe
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\bin\Debug\RembyUninstaller.pdb
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\obj\x86\Debug\RembyUninstaller.Properties.Resources.resources
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\obj\x86\Debug\RembyUninstaller.TrustInfo.xml
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\obj\x86\Debug\RembyUninstaller.exe.manifest
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\obj\x86\Debug\RembyUninstaller.application
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\obj\x86\Debug\RembyUninstaller.exe
+D:\Work\Remby\Mercurial\collector\trunk\RembyUninstaller\obj\x86\Debug\RembyUninstaller.pdb

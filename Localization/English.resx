@@ -1,0 +1,1069 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+    <comment>About title</comment>
+  </data>
+  <data name="Button_AddRemby" xml:space="preserve">
+    <value>Add to Remby</value>
+  </data>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Button_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Button_CloseThisWindow" xml:space="preserve">
+    <value>Close this window</value>
+  </data>
+  <data name="Button_Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="Button_Login" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="Button_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Button_SaveChanges" xml:space="preserve">
+    <value>Save changes</value>
+  </data>
+  <data name="EnglishLanguage" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="LabelDelimiter" xml:space="preserve">
+    <value>:</value>
+    <comment>Colon symbol for the label</comment>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Options_Advanced" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="Options_Audio_Bitrate" xml:space="preserve">
+    <value>Bitrate (Bits)</value>
+  </data>
+  <data name="Options_Audio_Bitspersample" xml:space="preserve">
+    <value>Bit per sample</value>
+  </data>
+  <data name="Options_Audio_Channels" xml:space="preserve">
+    <value>Channels</value>
+  </data>
+  <data name="Options_Audio_Sample" xml:space="preserve">
+    <value>Sample frequency (Hz)</value>
+  </data>
+  <data name="Options_Audio_Title" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="Options_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Options_Language_Title" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Options_Language_UseIn" xml:space="preserve">
+    <value>Use RembyCollector in</value>
+  </data>
+  <data name="Options_LoggedIn" xml:space="preserve">
+    <value>Signed in as</value>
+  </data>
+  <data name="Options_LogOut" xml:space="preserve">
+    <value>Sign out</value>
+  </data>
+  <data name="Options_NotLoggedIn" xml:space="preserve">
+    <value>Not signed in</value>
+  </data>
+  <data name="Options_RembyAccount" xml:space="preserve">
+    <value>Remby account</value>
+  </data>
+  <data name="Options_Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Options_SaveDataError" xml:space="preserve">
+    <value>There was an error saving the configuration file, please make sure all the data you changed is valid.</value>
+  </data>
+  <data name="Options_SettingsRestored" xml:space="preserve">
+    <value>Your settings have been restored to defaults</value>
+  </data>
+  <data name="Options_SignedOutNote" xml:space="preserve">
+    <value>You will be signed out once you exit the application</value>
+  </data>
+  <data name="Options_StartWithWindows" xml:space="preserve">
+    <value>Start automatically with Windows?</value>
+  </data>
+  <data name="Options_Title" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Options_Video" xml:space="preserve">
+    <value>Screen video</value>
+  </data>
+  <data name="Options_Video_FrameRate" xml:space="preserve">
+    <value>Framerate</value>
+  </data>
+  <data name="Options_Video_Title" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="Options_Video_YouTubePrivate" xml:space="preserve">
+    <value>Mark video as private on YouTube?</value>
+  </data>
+  <data name="Options_Webcam_Device" xml:space="preserve">
+    <value>Device</value>
+  </data>
+  <data name="Options_Webcam_Title" xml:space="preserve">
+    <value>Webcam</value>
+  </data>
+  <data name="Remby" xml:space="preserve">
+    <value>Remby</value>
+  </data>
+  <data name="RembyClipper" xml:space="preserve">
+    <value>RembyCollector</value>
+  </data>
+  <data name="RussianLanguage" xml:space="preserve">
+    <value>Russian</value>
+  </data>
+  <data name="SwedishLanguage" xml:space="preserve">
+    <value>Swedish</value>
+  </data>
+  <data name="AllRightsReserved" xml:space="preserve">
+    <value>All rights reserved.</value>
+  </data>
+  <data name="ChangeTags" xml:space="preserve">
+    <value>Change tags</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>File</value>
+    <comment>File type</comment>
+  </data>
+  <data name="History_All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="History_ChangeTagsError" xml:space="preserve">
+    <value>An error occured at our backend in attempt to change the tags. Please try again later.</value>
+  </data>
+  <data name="History_Files" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="History_FilterOnTags" xml:space="preserve">
+    <value>Filter on tags</value>
+  </data>
+  <data name="History_Images" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="History_ListTitle" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="History_Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="History_Screenshot" xml:space="preserve">
+    <value>Screenshot</value>
+  </data>
+  <data name="History_Screenshots" xml:space="preserve">
+    <value>Screenshots</value>
+  </data>
+  <data name="History_Screenvideo" xml:space="preserve">
+    <value>Screen video</value>
+  </data>
+  <data name="History_SelectElementToShare" xml:space="preserve">
+    <value>Please select an element which you wish to share</value>
+  </data>
+  <data name="History_ShowAll" xml:space="preserve">
+    <value>Show All</value>
+  </data>
+  <data name="History_ShowFiles" xml:space="preserve">
+    <value>Show Files</value>
+  </data>
+  <data name="History_ShowImages" xml:space="preserve">
+    <value>Show Images</value>
+  </data>
+  <data name="History_ShowScreenShots" xml:space="preserve">
+    <value>Show Screenshots</value>
+  </data>
+  <data name="History_ShowTexts" xml:space="preserve">
+    <value>Show Texts</value>
+  </data>
+  <data name="History_ShowVideos" xml:space="preserve">
+    <value>Show Videos</value>
+  </data>
+  <data name="History_Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="History_Texts" xml:space="preserve">
+    <value>Texts</value>
+  </data>
+  <data name="History_Title" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="History_Videos" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Image</value>
+    <comment>File type</comment>
+  </data>
+  <data name="OCR" xml:space="preserve">
+    <value>OCR</value>
+  </data>
+  <data name="OCR_FormTitle" xml:space="preserve">
+    <value>Remby screenshot OCR</value>
+  </data>
+  <data name="OCR_HowToImprove" xml:space="preserve">
+    <value>How to improve OCR quality</value>
+  </data>
+  <data name="OCR_Quality" xml:space="preserve">
+    <value>OCR Quality</value>
+  </data>
+  <data name="OCR_TextCopied" xml:space="preserve">
+    <value>Text has been copied to your clipboard</value>
+  </data>
+  <data name="OCR_Tips" xml:space="preserve">
+    <value>Optical Character Recognition, OCR, works best with black text on a white background and where the text is 12p or larger.
+Common, simple fonts will read better than elaborate hand-writing-style fonts. 
+Pictures within the screenshot will sometimes be interpreted as text and will create nonsense characters.
+For best results try the following: 
+-Make sure you copy only one column at a time
+-Copy from pages with 12p or larger fonts
+-Copy from pages with simple fonts. Avoid handwriting style fonts. 
+-Copy only text and avoid pictures in the selection</value>
+  </data>
+  <data name="OCR_Title1" xml:space="preserve">
+    <value>Extracted text</value>
+  </data>
+  <data name="OCR_Title2" xml:space="preserve">
+    <value>(we’ll use this text to index the screenshot on Remby)</value>
+  </data>
+  <data name="RembyLink" xml:space="preserve">
+    <value>www.remby.com</value>
+  </data>
+  <data name="ShareThis" xml:space="preserve">
+    <value>Share this</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="TextType" xml:space="preserve">
+    <value>Text</value>
+    <comment>File type</comment>
+  </data>
+  <data name="ToolTip_Copy" xml:space="preserve">
+    <value>Copy to clipboard</value>
+  </data>
+  <data name="ToolTip_OCR" xml:space="preserve">
+    <value>Show OCR</value>
+  </data>
+  <data name="ToolTip_Save" xml:space="preserve">
+    <value>Save to file</value>
+  </data>
+  <data name="TopNav_AddNewBook" xml:space="preserve">
+    <value>Add new book</value>
+  </data>
+  <data name="TopNav_Canceled" xml:space="preserve">
+    <value>Canceled...</value>
+  </data>
+  <data name="TopNav_CancelUploading" xml:space="preserve">
+    <value>Cancel uploading</value>
+  </data>
+  <data name="TopNav_Capture" xml:space="preserve">
+    <value>Screenshot</value>
+  </data>
+  <data name="TopNav_ChangeTagsWithParam" xml:space="preserve">
+    <value>Tags: {0} Change? {1:2}</value>
+  </data>
+  <data name="TopNav_CheckForUpdates" xml:space="preserve">
+    <value>Check for updates</value>
+  </data>
+  <data name="TopNav_ClickToAddTagWithParam" xml:space="preserve">
+    <value>Click to add a tag {0:2}</value>
+  </data>
+  <data name="TopNav_Close" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="TopNav_DragAndDropDoesntSupported" xml:space="preserve">
+    <value>This type of objects is not supported by the RembyCollector.</value>
+  </data>
+  <data name="TopNav_EditBook" xml:space="preserve">
+    <value>Edit book on Remby</value>
+  </data>
+  <data name="TopNav_Error" xml:space="preserve">
+    <value>Server issue, try again later.</value>
+  </data>
+  <data name="TopNav_Exit" xml:space="preserve">
+    <value>Are you sure you want to exit the RembyCollector?</value>
+  </data>
+  <data name="TopNav_FewFilesWerentImages" xml:space="preserve">
+    <value>Few files weren't images</value>
+  </data>
+  <data name="TopNav_Hi" xml:space="preserve">
+    <value>Hi</value>
+  </data>
+  <data name="TopNav_History" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="TopNav_HistoryRefreshed" xml:space="preserve">
+    <value>History refreshed</value>
+  </data>
+  <data name="TopNav_HistoryRefreshing" xml:space="preserve">
+    <value>History (refreshing)</value>
+  </data>
+  <data name="TopNav_OpenLogFolder" xml:space="preserve">
+    <value>Open log folder</value>
+  </data>
+  <data name="TopNav_SendLogViaSkype" xml:space="preserve">
+    <value>Send log via Skype</value>
+  </data>
+  <data name="TopNav_SendSkypeMessageWithParam" xml:space="preserve">
+    <value>Debug log copied to desktop, with filename: {0}
+After pressing OK, please find the file with Skype and send it to us. Thanks.</value>
+  </data>
+  <data name="TopNav_ShortenUrlCopiedToClipBoardWithParam" xml:space="preserve">
+    <value>The shortened URL: {0} has been copied to your clipboard</value>
+  </data>
+  <data name="TopNav_ShowDebugLog" xml:space="preserve">
+    <value>Show debug log</value>
+  </data>
+  <data name="TopNav_Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="TopNav_Uploaded" xml:space="preserve">
+    <value>Uploaded</value>
+  </data>
+  <data name="TopNav_Uploading" xml:space="preserve">
+    <value>Uploading</value>
+  </data>
+  <data name="TopNav_Video" xml:space="preserve">
+    <value>Screen video</value>
+  </data>
+  <data name="TopNav_WereUploaded" xml:space="preserve">
+    <value>were uploaded</value>
+  </data>
+  <data name="TopNav_YouTubeDescription" xml:space="preserve">
+    <value>RembyCollector uploaded video</value>
+  </data>
+  <data name="TopNav_YouTubeTitle" xml:space="preserve">
+    <value>Uploaded video</value>
+  </data>
+  <data name="Tray_About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Tray_Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Tray_GettingStarted" xml:space="preserve">
+    <value>Getting started</value>
+  </data>
+  <data name="Tray_Options" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Video" xml:space="preserve">
+    <value>Video</value>
+    <comment>File type</comment>
+  </data>
+  <data name="Windows_Open" xml:space="preserve">
+    <value>Open Windows</value>
+  </data>
+  <data name="Windows_Screenshot" xml:space="preserve">
+    <value>Screenshot</value>
+  </data>
+  <data name="Windows_Screenvideo" xml:space="preserve">
+    <value>Screen video</value>
+  </data>
+  <data name="Button_Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Error_InvalidCredentials" xml:space="preserve">
+    <value>Invalid credentials</value>
+  </data>
+  <data name="Error_LoadingVideo" xml:space="preserve">
+    <value>There was an error loading your video.</value>
+  </data>
+  <data name="Error_VideoUpload" xml:space="preserve">
+    <value>There was an error during video upload.</value>
+  </data>
+  <data name="FirstUserExperence_dontshow" xml:space="preserve">
+    <value>Don't show this screen again</value>
+  </data>
+  <data name="FirstUserExperience_body1" xml:space="preserve">
+    <value>In the next step, we will ask you to log in to your existing YouTube account or to create a new one.</value>
+  </data>
+  <data name="FirstUserExperience_body2" xml:space="preserve">
+    <value>After uploading your video, you can use it in Remby by choosing "Video" from the toolbar.</value>
+  </data>
+  <data name="FirstUserExperience_FormTitle" xml:space="preserve">
+    <value>Remby screen video</value>
+  </data>
+  <data name="FirstUserExperience_title" xml:space="preserve">
+    <value>To add your video to Remby, You need to upload it to YouTube</value>
+  </data>
+  <data name="GettingStarted_DidYouKnow" xml:space="preserve">
+    <value>Did you know?</value>
+  </data>
+  <data name="GettingStarted_DontShowAgain" xml:space="preserve">
+    <value>Don't show this again</value>
+  </data>
+  <data name="GettingStarted_Note1" xml:space="preserve">
+    <value>That anything you drag and drop on to the 
+gray R at the edge of the screen, will 
+be available in My Stuff Panel on remby.com. From there you can easily add it to your pages. 
+
+Try dragging a picture or some text from 
+a web-page. Or a file from your desktop.</value>
+  </data>
+  <data name="GettingStarted_Note2" xml:space="preserve">
+    <value>That all of your content is available in the online editor. Just drag items from the My Stuff panel to the left and drop them on your page.</value>
+  </data>
+  <data name="GettingStarted_Note3" xml:space="preserve">
+    <value>That you can use keyboard shortcuts to
+quickly take screenshots or start recording
+a screen video?</value>
+  </data>
+  <data name="GettingStarted_Note4" xml:space="preserve">
+    <value>That while recording a video, you can 
+move the webcam picture in picture 
+around? And even drag it outside the 
+recording area, so it won't be visible in 
+the final version?</value>
+  </data>
+  <data name="GettingStarted_Note5" xml:space="preserve">
+    <value>That while you are recording a screen 
+video, you can move the recording frame 
+around? Just grab the bottom bar and drag 
+it to whatever you want to record. 
+You can also move the picture in picture 
+(the one of yourself) or turn it off 
+completely. Just move your mouse over it 
+and you will figure it out.</value>
+  </data>
+  <data name="RembyLogin_CreateAccount" xml:space="preserve">
+    <value>Go to Remby to create an account</value>
+  </data>
+  <data name="RembyLogin_DontHaveAccount" xml:space="preserve">
+    <value>Don't have a Remby account?</value>
+  </data>
+  <data name="RembyLogin_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="RembyLogin_RememberMe" xml:space="preserve">
+    <value>Remember me?</value>
+  </data>
+  <data name="RembyLogin_Title" xml:space="preserve">
+    <value>Please log into your Remby account</value>
+  </data>
+  <data name="RembyLogin_Username" xml:space="preserve">
+    <value>Username or email address</value>
+  </data>
+  <data name="RembyVideo_Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="RembyVideo_CompeteTags" xml:space="preserve">
+    <value>Please complete the Tags field.</value>
+  </data>
+  <data name="RembyVideo_CompleteDescription" xml:space="preserve">
+    <value>Please complete the Description field.</value>
+  </data>
+  <data name="RembyVideo_CompleteTitle" xml:space="preserve">
+    <value>Please complete the Title field.</value>
+  </data>
+  <data name="RembyVideo_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="RembyVideo_TagsText" xml:space="preserve">
+    <value>Remby, Screen video</value>
+  </data>
+  <data name="RembyVideo_Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="RembyVideo_TitleText" xml:space="preserve">
+    <value>Remby screen video -</value>
+  </data>
+  <data name="RembyVideo_WindowTitle" xml:space="preserve">
+    <value>RembyCollector screen video</value>
+  </data>
+  <data name="RembyVideo_YouTubeLegal" xml:space="preserve">
+    <value>By uploading your video, you certify that you own all rights to the content or that you are authorized by the owner to make the content publicly available on YouTube, and that it otherwise complies with the YouTube Terms of Service</value>
+  </data>
+  <data name="RembyYouTubeLogin_CreateAccount" xml:space="preserve">
+    <value>Go to YouTube to create an account</value>
+  </data>
+  <data name="RembyYouTubeLogin_DontHaveAccount" xml:space="preserve">
+    <value>Don't have a YouTube account?</value>
+  </data>
+  <data name="RembyYouTubeLogin_FreeUserTitle" xml:space="preserve">
+    <value>As a free user, your videos will be stored on YouTube</value>
+  </data>
+  <data name="RembyYouTubeLogin_KeepLoggedIn" xml:space="preserve">
+    <value>We will keep you logged in until you quit RembyCollector.
+And we will not store your password. Promised.</value>
+  </data>
+  <data name="RembyYouTubeLogin_Title" xml:space="preserve">
+    <value>Please log into your YouTube account.</value>
+  </data>
+  <data name="VideoRecorder_CloseCam" xml:space="preserve">
+    <value>Close Camera Picture In Picture</value>
+  </data>
+  <data name="VideoRecorder_MuteMic" xml:space="preserve">
+    <value>Mute microphone</value>
+  </data>
+  <data name="VideoRecorder_OpenCam" xml:space="preserve">
+    <value>Open Camera Picture In Picture</value>
+  </data>
+  <data name="VideoRecorder_StartRecording" xml:space="preserve">
+    <value>Start recording</value>
+  </data>
+  <data name="VideoRecorder_StopRecording" xml:space="preserve">
+    <value>Stop recording</value>
+  </data>
+  <data name="VideoRecorder_UnmutMic" xml:space="preserve">
+    <value>Unmute microphone</value>
+  </data>
+  <data name="Capture_MarkArea" xml:space="preserve">
+    <value>Mark the area you want to shoot</value>
+  </data>
+  <data name="RembyScreenshot_CopiedToClipboard" xml:space="preserve">
+    <value>Image has been copied to your clipboard</value>
+  </data>
+  <data name="RembyScrennshot_WindowTitle" xml:space="preserve">
+    <value>RembyCollector {0}</value>
+  </data>
+  <data name="RembyText_WindowTitle" xml:space="preserve">
+    <value>RembyCollector text</value>
+  </data>
+  <data name="Remby_Login_Title" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="VideoRecorder_ZoomIn" xml:space="preserve">
+    <value>Zoom-in Camera Picture In Picture</value>
+  </data>
+  <data name="VideoRecorder_ZoomOut" xml:space="preserve">
+    <value>Zoom-out Camera Picture In Picture</value>
+  </data>
+  <data name="Options_Login" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="History_Expand_List_Button" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="History_Items_Count" xml:space="preserve">
+    <value>Items: 1-{0} of {1}</value>
+  </data>
+  <data name="History_Select_To_Change_Tags" xml:space="preserve">
+    <value>Select element to change tags for</value>
+  </data>
+  <data name="AddArrow" xml:space="preserve">
+    <value>Add Arrow</value>
+  </data>
+  <data name="AddCircle" xml:space="preserve">
+    <value>Add Circle</value>
+  </data>
+  <data name="AddRectangle" xml:space="preserve">
+    <value>Add Rectangle</value>
+  </data>
+  <data name="AddText" xml:space="preserve">
+    <value>Add Text</value>
+  </data>
+  <data name="Arrow" xml:space="preserve">
+    <value>Arrow</value>
+  </data>
+  <data name="BorderColor" xml:space="preserve">
+    <value>Border color</value>
+  </data>
+  <data name="BorderOpacity" xml:space="preserve">
+    <value>Border opacity</value>
+  </data>
+  <data name="BorderSizyType" xml:space="preserve">
+    <value>pt</value>
+  </data>
+  <data name="BorderWidth" xml:space="preserve">
+    <value>Border width</value>
+  </data>
+  <data name="BringForward" xml:space="preserve">
+    <value>bring forward</value>
+  </data>
+  <data name="BringToFront" xml:space="preserve">
+    <value>bring to front</value>
+  </data>
+  <data name="ChangeBorderColor" xml:space="preserve">
+    <value>Change Border Color</value>
+  </data>
+  <data name="ChangeBorderWidth" xml:space="preserve">
+    <value>Change border width</value>
+  </data>
+  <data name="ChangeFigureOpacity" xml:space="preserve">
+    <value>Change figure opacity</value>
+  </data>
+  <data name="ChangeFiguresOrder" xml:space="preserve">
+    <value>Change figures order</value>
+  </data>
+  <data name="ChangeFillColor" xml:space="preserve">
+    <value>Change Fill Color</value>
+  </data>
+  <data name="ChangeTextColor" xml:space="preserve">
+    <value>Change text color</value>
+  </data>
+  <data name="ChangeTextFont" xml:space="preserve">
+    <value>Change text font</value>
+  </data>
+  <data name="Circle" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>Clone</value>
+  </data>
+  <data name="CloneSelectedFigure" xml:space="preserve">
+    <value>Clone selected figure</value>
+  </data>
+  <data name="FigureName" xml:space="preserve">
+    <value>Figure</value>
+  </data>
+  <data name="FillColor" xml:space="preserve">
+    <value>Fill color</value>
+  </data>
+  <data name="FillOpacity" xml:space="preserve">
+    <value>Fill opacity</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="FontColor" xml:space="preserve">
+    <value>Font color</value>
+  </data>
+  <data name="NoBorder" xml:space="preserve">
+    <value>no border</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Opacity" xml:space="preserve">
+    <value>Opacity</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Properties</value>
+    <comment>properties window caption</comment>
+  </data>
+  <data name="Rectangle" xml:space="preserve">
+    <value>Rectangle</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="RemoveFigure" xml:space="preserve">
+    <value>Remove selected figure</value>
+  </data>
+  <data name="Reorder" xml:space="preserve">
+    <value>Reorder</value>
+  </data>
+  <data name="SendBackward" xml:space="preserve">
+    <value>send backward</value>
+  </data>
+  <data name="SendToBack" xml:space="preserve">
+    <value>send to back</value>
+  </data>
+  <data name="TextFigureText" xml:space="preserve">
+    <value>Double click or press F2 to edit</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="ColorDialog_ApplyBtn" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="ColorDialog_Blue" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="ColorDialog_Green" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="ColorDialog_HTMLColor" xml:space="preserve">
+    <value>HTML Color</value>
+  </data>
+  <data name="ColorDialog_Opacity" xml:space="preserve">
+    <value>Opacity</value>
+  </data>
+  <data name="ColorDialog_RecentColors" xml:space="preserve">
+    <value>Recent colors</value>
+  </data>
+  <data name="ColorDialog_Red" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="ColorDialog_title" xml:space="preserve">
+    <value>Color adjusting</value>
+  </data>
+  <data name="TopNav_GoToMyBooks" xml:space="preserve">
+    <value>Go to My Rembooks</value>
+  </data>
+  <data name="TopNav_GoToMyStuff" xml:space="preserve">
+    <value>Go to Create page</value>
+  </data>
+  <data name="Options_MsgBoxPlacement" xml:space="preserve">
+    <value>Message box placement</value>
+  </data>
+  <data name="Options_placeAt" xml:space="preserve">
+    <value>Place at</value>
+  </data>
+  <data name="Place_BottomRight" xml:space="preserve">
+    <value>Bottom right</value>
+  </data>
+  <data name="Place_NearIcon" xml:space="preserve">
+    <value>Near R icon</value>
+  </data>
+  <data name="Place_TopRight" xml:space="preserve">
+    <value>Top right</value>
+  </data>
+  <data name="Button_Browse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="FileUpload_Title" xml:space="preserve">
+    <value>Files upload</value>
+  </data>
+  <data name="TopNav_Upload" xml:space="preserve">
+    <value>File Upload</value>
+  </data>
+  <data name="FileUpload_HelpLabel" xml:space="preserve">
+    <value>Click browse to select the items you want to upload</value>
+  </data>
+  <data name="InfoBox_File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="InfoBox_Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="InfoBox_ScreenShoot" xml:space="preserve">
+    <value>Screenshot</value>
+  </data>
+  <data name="InfoBox_Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="InfoBox_UploadingWithParam" xml:space="preserve">
+    <value>Uploading - {0}</value>
+  </data>
+  <data name="InfoBox_Files" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="InfoBox_Video" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="AccountType_Basic" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="AccountType_Plus" xml:space="preserve">
+    <value>Plus</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+    <comment>Error text</comment>
+  </data>
+  <data name="Options_Account_FileSizeLimitLabel" xml:space="preserve">
+    <value>File size limit</value>
+  </data>
+  <data name="Options_Account_StorageSizeLimitLabel" xml:space="preserve">
+    <value>Storage size limit</value>
+  </data>
+  <data name="Options_Account_SubcriptionLabel" xml:space="preserve">
+    <value>Subscription type</value>
+  </data>
+  <data name="Options_Account_TabTitle" xml:space="preserve">
+    <value>My account</value>
+  </data>
+  <data name="Options_Account_UpdatePeriodLabel" xml:space="preserve">
+    <value>Check for update every</value>
+  </data>
+  <data name="Options_Account_UpdatePolicyLabel" xml:space="preserve">
+    <value>Live update policy</value>
+  </data>
+  <data name="Options_Account_UpgradeBtn" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="Options_Account_UserIdLabel" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+  <data name="Options_Update_EveryDay" xml:space="preserve">
+    <value>Every day</value>
+  </data>
+  <data name="Options_Update_EveryHour" xml:space="preserve">
+    <value>Every hour</value>
+  </data>
+  <data name="Options_Update_EveryWeek" xml:space="preserve">
+    <value>Every week</value>
+  </data>
+  <data name="Options_Update_Never" xml:space="preserve">
+    <value>Never</value>
+  </data>
+  <data name="RembyFileUpload_WindowTitle" xml:space="preserve">
+    <value>RembyCollector File Upload</value>
+  </data>
+  <data name="RestartApplicationText" xml:space="preserve">
+    <value>Restart Application</value>
+  </data>
+  <data name="TopNav_CancelCurrent" xml:space="preserve">
+    <value>Cancel current</value>
+  </data>
+  <data name="TopNav_CancellAllUploading" xml:space="preserve">
+    <value>Cancel all</value>
+  </data>
+  <data name="TopNav_ClearHistory" xml:space="preserve">
+    <value>Clear all</value>
+  </data>
+  <data name="TopNav_ClearList" xml:space="preserve">
+    <value>Clear list</value>
+  </data>
+  <data name="TopNav_CurrentUploadingQueue" xml:space="preserve">
+    <value>Current uploading queue</value>
+  </data>
+  <data name="TopNav_RecentUploadingItems" xml:space="preserve">
+    <value>Recent uploads</value>
+  </data>
+  <data name="TopNav_UpdateErrorMessage" xml:space="preserve">
+    <value>An error occured in attemp to check application update.</value>
+  </data>
+  <data name="Update_AvailableMessageWithQuestion" xml:space="preserve">
+    <value>An update is available. Would you like to update the application now?</value>
+  </data>
+  <data name="Update_AvailableText" xml:space="preserve">
+    <value>Update Available</value>
+  </data>
+  <data name="Update_Cancelled" xml:space="preserve">
+    <value>The update was cancelled.</value>
+  </data>
+  <data name="Update_CouldNotInstallLatestVersionWithParam" xml:space="preserve">
+    <value>Could not install the latest version of the application. Reason: \n{0}\nPlease report this error to the system administrator.</value>
+  </data>
+  <data name="Update_LatestVersionRunning" xml:space="preserve">
+    <value>You are running the latest version of the RembyCollector.</value>
+  </data>
+  <data name="Update_MandatoryUpdateWithParam" xml:space="preserve">
+    <value>This application has detected a mandatory update from your current version to version {0}. The application will now install the update and restart.</value>
+  </data>
+  <data name="Update_NewVersionCouldNotBeRetreivedWithParam" xml:space="preserve">
+    <value>Could not retrieve new version of the application. Reason: 
+{0}. 
+Try again later.</value>
+  </data>
+  <data name="Update_UpdateToLatestVerWasCancelled" xml:space="preserve">
+    <value>The update of the application's latest version was cancelled</value>
+  </data>
+  <data name="Update_WouldYouLikeToRestartMessage" xml:space="preserve">
+    <value>The application has been updated. Do you want to restart? (If you do not restart it now, the new version will not take effect until you quit and launch the application again.)</value>
+  </data>
+  <data name="TopNav_UnsupportedExtension" xml:space="preserve">
+    <value>Unsupproted extension - {0} ({1})</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="AccountType_Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="NotificationDontShowAgain" xml:space="preserve">
+    <value>Don't show this message again</value>
+  </data>
+  <data name="ContextMessageFileDragging" xml:space="preserve">
+    <value>Do you know that you can drag files in top of the R collector icon for uploading?</value>
+  </data>
+  <data name="ContextMessageRandom" xml:space="preserve">
+    <value>Do you know that you can also add stuff directly to pages by using the "Add" button in the editor?</value>
+  </data>
+  <data name="ContextMessageUploadVideoFile" xml:space="preserve">
+    <value>To use video on Remby, upload it to YouTube first then add it from the "Add" menu in the editor or drag it to the RembyCollector.</value>
+  </data>
+  <data name="ContextMessageYouTubeRecording" xml:space="preserve">
+    <value>Do you know that you can drag and drop a video thumbnail directly to the R-icon to upload it to MyStuff?</value>
+  </data>
+  <data name="GettingStarted_Button_Close" xml:space="preserve">
+    <value>Close Introduction</value>
+  </data>
+  <data name="Button_Reselect" xml:space="preserve">
+    <value>Reselect</value>
+  </data>
+  <data name="OneClickScreenShot_Text" xml:space="preserve">
+    <value>To select a specific area: 
+1. Click and hold the mouse button in  the top left corner of the area you want to select
+2. Drag to the bottom left corner of the area
+3. Rlease the mouse button</value>
+  </data>
+  <data name="OneClickScreenShot_Title" xml:space="preserve">
+    <value>You clicked once and RembyCollector has taken a screenshot of the whole screen.</value>
+  </data>
+  <data name="Attention" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="YouTube_InvalidCredentials" xml:space="preserve">
+    <value>Invalid YouTube user credentials.</value>
+  </data>
+  <data name="YouTube_ValidationError" xml:space="preserve">
+    <value>Validation youtube error. Please check title, tags and etc...</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="ShareTo" xml:space="preserve">
+    <value>Share to</value>
+  </data>
+  <data name="TypeYourTextHere" xml:space="preserve">
+    <value>Type your text here</value>
+  </data>
+  <data name="SuccessShare_AvailableAt" xml:space="preserve">
+    <value>and available at:</value>
+  </data>
+  <data name="AnnotateBubble" xml:space="preserve">
+    <value>Annotate</value>
+  </data>
+  <data name="AddAnnotateBubble" xml:space="preserve">
+    <value>Add annotate bubble</value>
+  </data>
+  <data name="InfoBox_Uploading" xml:space="preserve">
+    <value>Item uploading</value>
+  </data>
+  <data name="NotificationsAreaWrongPlace" xml:space="preserve">
+    <value>Notification area moved to the right side of the screen to be able to show messages properly.</value>
+  </data>
+  <data name="ScreenshotTextParam" xml:space="preserve">
+    <value>Screenshot {0} at {1}</value>
+  </data>
+  <data name="DescriptionText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="LinkTooIsToLong" xml:space="preserve">
+    <value>Link is too long. Can not upload links bigger than 500 characters.</value>
+  </data>
+  <data name="TagIsAlreadyUsed" xml:space="preserve">
+    <value>This tag is already used</value>
+  </data>
+  <data name="not_authorized" xml:space="preserve">
+    <value>Client not authorized by the server. Please restart the application.</value>
+  </data>
+  <data name="unsupported_media_type" xml:space="preserve">
+    <value>Media type is unsupported.</value>
+  </data>
+  <data name="IE_Not_Supported" xml:space="preserve">
+    <value>Drag and drop is not supported from Internet Explorer. Use Chrome, Firefox or Safari instead.</value>
+  </data>
+</root>

@@ -1,0 +1,1793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F8E147CD-2AD8-4D08-9019-22CD82292BF8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RembyClipper2</RootNamespace>
+    <AssemblyName>RembyCollector</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>D:\Work\Remby\Mercurial\collector\trunk\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>1</UpdateInterval>
+    <UpdateIntervalUnits>Hours</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://dl.remby.com/apps/win/collector/stable/</InstallUrl>
+    <SupportUrl>http://www.remby.com/help#help-collect</SupportUrl>
+    <ProductName>RembyCollector</ProductName>
+    <PublisherName>Remby</PublisherName>
+    <MinimumRequiredVersion>2.1.0.35</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>38</ApplicationRevision>
+    <ApplicationVersion>2.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;INTERNAL LOGGING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;antiflicker LOGGING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D01BCD56030C940A1BC54C85A0CBCD4D4B88B887</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>mscertificate2013_w_private_key.cer.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>clipper32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestTimestampUrl>http://timestamp.verisign.com/scripts/timstamp.dll</ManifestTimestampUrl>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>mscertificate2013_w_private_key.cer.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AACDecoder.NET">
+      <HintPath>DLL\AACDecoder.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="AACEncoder.NET">
+      <HintPath>DLL\AACEncoder.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge">
+      <HintPath>DLL\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>DLL\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>DLL\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Client, Version=1.7.0.25712, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Google.GData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Extensions, Version=1.7.0.25712, Culture=neutral, PublicKeyToken=0b4c5df2ebf20876, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Google.GData.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.YouTube, Version=1.7.0.25713, Culture=neutral, PublicKeyToken=af04a32718ae8833, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Google.GData.YouTube.dll</HintPath>
+    </Reference>
+    <Reference Include="H264Decoder.NET, Version=1.6.288.0, Culture=neutral, PublicKeyToken=d264bf7150202654, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\H264Decoder.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="H264Encoder.NET">
+      <HintPath>DLL\H264Encoder.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2c3bceffc486c655, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>DLL\Interop.IWshRuntimeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonExSerializer">
+      <HintPath>DLL\JsonExSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="ManagedWinapi">
+      <HintPath>DLL\ManagedWinapi.dll</HintPath>
+    </Reference>
+    <Reference Include="MediaBase">
+      <HintPath>DLL\MediaBase.dll</HintPath>
+    </Reference>
+    <Reference Include="MP4Reader.NET">
+      <HintPath>DLL\MP4Reader.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="MP4Toolkit">
+      <HintPath>DLL\MP4Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="MPEG4Decoder.NET">
+      <HintPath>DLL\MPEG4Decoder.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="MPEG4Encoder.NET">
+      <HintPath>DLL\MPEG4Encoder.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="NDde">
+      <HintPath>DLL\NDde.dll</HintPath>
+    </Reference>
+    <Reference Include="RTP.NET">
+      <HintPath>DLL\RTP.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="StreamTools.NET">
+      <HintPath>DLL\StreamTools.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="tessnet2_32">
+      <HintPath>DLL\tessnet2_32.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\AutoCompleteTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\BarControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\BarControl.Designer.cs">
+      <DependentUpon>BarControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseCaptureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\BlueButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\BlueButton.Designer.cs">
+      <DependentUpon>BlueButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BlueRoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\ButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\ButtonBase.Designer.cs">
+      <DependentUpon>ButtonBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ButtonBlack.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ButtonBlack.Designer.cs">
+      <DependentUpon>ButtonBlack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ButtonCopy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ButtonCopy.Designer.cs">
+      <DependentUpon>ButtonCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ButtonOCR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ButtonOCR.Designer.cs">
+      <DependentUpon>ButtonOCR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ButtonOrange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ButtonOrange.Designer.cs">
+      <DependentUpon>ButtonOrange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ButtonPlayPause.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ButtonPlayPause.Designer.cs">
+      <DependentUpon>ButtonPlayPause.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ButtonSave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ButtonSave.Designer.cs">
+      <DependentUpon>ButtonSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\CaptureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\CaptureForm.Designer.cs">
+      <DependentUpon>CaptureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\CustomList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\CustomList.Designer.cs">
+      <DependentUpon>CustomList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\CustomListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\CustomListItem.Designer.cs">
+      <DependentUpon>CustomListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\TagEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\TagEditControl.Designer.cs">
+      <DependentUpon>TagEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ExtendedProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ExtendedProgressBar.designer.cs">
+      <DependentUpon>ExtendedProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ExtendedRoundedTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ExtendedRoundedTextBox.designer.cs">
+      <DependentUpon>ExtendedRoundedTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\FirstUserExperience.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FirstUserExperience.Designer.cs">
+      <DependentUpon>FirstUserExperience.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\GrayButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\GrayButton.Designer.cs">
+      <DependentUpon>GrayButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\GrayPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\GrayPanel.Designer.cs">
+      <DependentUpon>GrayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\GrayToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\GrayToolStrip.Designer.cs">
+      <DependentUpon>GrayToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\PanelBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\PanelBase.Designer.cs">
+      <DependentUpon>PanelBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\RembyBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\RembyBar.Designer.cs">
+      <DependentUpon>RembyBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\RembyDone.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\RembyDone.Designer.cs">
+      <DependentUpon>RembyDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\RembyLoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\RembyLoginControl.Designer.cs">
+      <DependentUpon>RembyLoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\RembyProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\RembyProgressBar.Designer.cs">
+      <DependentUpon>RembyProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\RembyUploading.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\RembyUploading.Designer.cs">
+      <DependentUpon>RembyUploading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\RembyVideo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\RembyVideo.Designer.cs">
+      <DependentUpon>RembyVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\RembyYouTubeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\RembyYouTubeControl.Designer.cs">
+      <DependentUpon>RembyYouTubeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\TagItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\TagItem.Designer.cs">
+      <DependentUpon>TagItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\TagsCombo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\TagsCombo.Designer.cs">
+      <DependentUpon>TagsCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ToolStripBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\ToolStripBase.Designer.cs">
+      <DependentUpon>ToolStripBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\TopNav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\TopNav.Designer.cs">
+      <DependentUpon>TopNav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Utils.cs" />
+    <Compile Include="Base\VideoPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\VideoPlayer.Designer.cs">
+      <DependentUpon>VideoPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\VideoRecorder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\VideoRecorder.Designer.cs">
+      <DependentUpon>VideoRecorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\AppConfig.cs" />
+    <Compile Include="Config\Options2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\Options2.Designer.cs">
+      <DependentUpon>Options2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\TabButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Config\TabButton.Designer.cs">
+      <DependentUpon>TabButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\XmlFormater.cs" />
+    <Compile Include="Controllers\IconMovingController.cs" />
+    <Compile Include="DrawingTool\CustomColorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawingTool\CustomColorDialog.Designer.cs">
+      <DependentUpon>CustomColorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawingTool\DrawingSurface.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingTool\DrawingSurface.Designer.cs">
+      <DependentUpon>DrawingSurface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawingTool\DrawingUtils.cs" />
+    <Compile Include="DrawingTool\Editors\DoubleBufferedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawingTool\Editors\DoubleBufferedPanel.Designer.cs">
+      <DependentUpon>DoubleBufferedPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawingTool\Editors\IEditable.cs" />
+    <Compile Include="DrawingTool\Editors\PropertyEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawingTool\Editors\PropertyEditor.Designer.cs">
+      <DependentUpon>PropertyEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawingTool\Editors\TransparentTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawingTool\Editors\TransparentTextBox.Designer.cs">
+      <DependentUpon>TransparentTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawingTool\FigureCreator\AnnotateBubleCreator.cs" />
+    <Compile Include="DrawingTool\FigureCreator\ArrowCreator.cs" />
+    <Compile Include="DrawingTool\FigureCreator\CircleCreator.cs" />
+    <Compile Include="DrawingTool\FigureCreator\CustomArrowCreator.cs" />
+    <Compile Include="DrawingTool\FigureCreator\FigureCreator.cs" />
+    <Compile Include="DrawingTool\Figures\MarkerCreator.cs" />
+    <Compile Include="DrawingTool\FigureCreator\RectangleCreator.cs" />
+    <Compile Include="DrawingTool\FigureCreator\TextCreator.cs" />
+    <Compile Include="DrawingTool\FiguresCommands\ChangeFigureBorderColorCommand.cs" />
+    <Compile Include="DrawingTool\FiguresCommands\ChangeFigureBorderSizeCommand.cs" />
+    <Compile Include="DrawingTool\FiguresCommands\ChangeFigureFillColorCommand.cs" />
+    <Compile Include="DrawingTool\FiguresCommands\ChangeFigureFontColor.cs" />
+    <Compile Include="DrawingTool\FiguresCommands\ChangeFigureFontCommand.cs" />
+    <Compile Include="DrawingTool\FiguresCommands\ChangeFigureOpacityCommand.cs" />
+    <Compile Include="DrawingTool\FiguresCommands\ChangeFigureOrderCommand.cs" />
+    <Compile Include="DrawingTool\FiguresCommands\CloneFigureCommand.cs" />
+    <Compile Include="DrawingTool\FiguresCommands\CommandBase.cs" />
+    <Compile Include="DrawingTool\FiguresCommands\RemoveFigureCommand.cs" />
+    <Compile Include="DrawingTool\Figures\AnnotateBubleFigure.cs" />
+    <Compile Include="DrawingTool\Figures\ArrowFigure.cs" />
+    <Compile Include="DrawingTool\Figures\CircleFigure.cs" />
+    <Compile Include="DrawingTool\Figures\CustomArrowFigure.cs" />
+    <Compile Include="DrawingTool\Figures\FigureBase.cs" />
+    <Compile Include="DrawingTool\Figures\ICommandsProvider.cs" />
+    <Compile Include="DrawingTool\Figures\IFigure.cs" />
+    <Compile Include="DrawingTool\Figures\PrettyArrowFigure.cs" />
+    <Compile Include="DrawingTool\Figures\RectangleFigure.cs" />
+    <Compile Include="DrawingTool\Figures\ReverseAnnotateBubble.cs" />
+    <Compile Include="DrawingTool\Figures\TextFigure.cs" />
+    <Compile Include="DrawingTool\ICommand.cs" />
+    <Compile Include="DrawingTool\IDrawingSurface.cs" />
+    <Compile Include="DrawingTool\IUndoRedoable.cs" />
+    <Compile Include="DrawingTool\Markers\AnnotateFigureMarker.cs" />
+    <Compile Include="DrawingTool\Markers\ArrowMarker.cs" />
+    <Compile Include="DrawingTool\Markers\IMarker.cs" />
+    <Compile Include="DrawingTool\Markers\Marker.cs" />
+    <Compile Include="DrawingTool\Markers\RotateMarker.cs" />
+    <Compile Include="DrawingTool\Markers\SizeMarker.cs" />
+    <Compile Include="DrawingTool\SurfaceCommands\AddAnnotateBubleAddCommand.cs" />
+    <Compile Include="DrawingTool\SurfaceCommands\AddArrowAddCommand.cs" />
+    <Compile Include="DrawingTool\SurfaceCommands\AddCircleAddCommand.cs" />
+    <Compile Include="DrawingTool\SurfaceCommands\AddCustomArrowAddCommand.cs" />
+    <Compile Include="DrawingTool\SurfaceCommands\AddRectangleAddCommand.cs" />
+    <Compile Include="DrawingTool\SurfaceCommands\AddTextAddCommand.cs" />
+    <Compile Include="DrawingTool\SurfaceCommands\ChangeBorderColorCommand.cs" />
+    <Compile Include="DrawingTool\SurfaceCommands\ChangeFillColorCommand.cs" />
+    <Compile Include="DrawingTool\SurfaceCommands\RedoCommand.cs" />
+    <Compile Include="DrawingTool\SurfaceCommands\SurfaceAddCommandBase.cs" />
+    <Compile Include="DrawingTool\SurfaceCommands\SurfaceCommandBase.cs" />
+    <Compile Include="DrawingTool\SurfaceCommands\UndoCommand.cs" />
+    <Compile Include="DrawingTool\UndoRedo\FigureState.cs" />
+    <Compile Include="DrawingTool\UndoRedo\IStatable.cs" />
+    <Compile Include="DrawingTool\UndoRedo\UndoRedoManager.cs" />
+    <Compile Include="English.Designer.cs">
+      <DependentUpon>English.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseFormOld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseFormOld.Designer.cs">
+      <DependentUpon>BaseFormOld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NotificationsAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NotificationsAreaForm.Designer.cs">
+      <DependentUpon>NotificationsAreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFileUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFileUpload.Designer.cs">
+      <DependentUpon>FormFileUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHistory.Designer.cs">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormQuickTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormQuickTag.Designer.cs">
+      <DependentUpon>FormQuickTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormQuicktext.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormQuicktext.Designer.cs">
+      <DependentUpon>FormQuicktext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormVideoPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVideoPlayer.Designer.cs">
+      <DependentUpon>FormVideoPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormYouTubeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormYouTubeLogin.Designer.cs">
+      <DependentUpon>FormYouTubeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GettingStarted.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GettingStarted.Designer.cs">
+      <DependentUpon>GettingStarted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\FormPlacer\BottomRightPlacer.cs" />
+    <Compile Include="Forms\InformationDialog\FormPlacer\FormPlacerBase.cs" />
+    <Compile Include="Forms\InformationDialog\FormPlacer\IFormPlacer.cs" />
+    <Compile Include="Forms\InformationDialog\FormPlacer\NearIconPlacer.cs" />
+    <Compile Include="Forms\InformationDialog\FormPlacer\TopRightPlacer.cs" />
+    <Compile Include="Forms\InformationDialog\InfoBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBox.Designer.cs">
+      <DependentUpon>InfoBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBoxDispatcher.cs" />
+    <Compile Include="Forms\InformationDialog\InfoBoxFail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBoxFail.Designer.cs">
+      <DependentUpon>InfoBoxFail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBoxInProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBoxInProcess.Designer.cs">
+      <DependentUpon>InfoBoxInProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBoxSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBoxSimple.Designer.cs">
+      <DependentUpon>InfoBoxSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBoxSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBoxSuccess.Designer.cs">
+      <DependentUpon>InfoBoxSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBoxSuccessShare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBoxSuccessShare.Designer.cs">
+      <DependentUpon>InfoBoxSuccessShare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBoxTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InformationDialog\InfoBoxTag.Designer.cs">
+      <DependentUpon>InfoBoxTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OCRForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OCRForm.Designer.cs">
+      <DependentUpon>OCRForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OneClickScreenShotWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OneClickScreenShotWarning.Designer.cs">
+      <DependentUpon>OneClickScreenShotWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RembyScreenshotNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RembyScreenshotNew.Designer.cs">
+      <DependentUpon>RembyScreenshotNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\BrowserSourceHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\CookieAwareWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\Crypt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\DebugHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\DrawingHelper.cs" />
+    <Compile Include="Helpers\ExComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\EXListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\GoogleShortResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\GrabScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\GuiRectangle.cs" />
+    <Compile Include="Helpers\History.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\ImageHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\MCIPlayer.cs" />
+    <Compile Include="Helpers\MediaStoreStruct.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\Post.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\RembyServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\ShortcutManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\SmartAssembly.Attributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\SOLHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\Tags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\UpdateHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\Upload.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\XmlSerialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\YouTubeHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HotKeys\HotKeys.cs" />
+    <Compile Include="HotKeys\HotKeysHandler.cs" />
+    <Compile Include="NewDesign.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewDesign.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Paid\Subscription.cs" />
+    <Compile Include="Player\AVIReaderWrapper.cs" />
+    <Compile Include="Player\PlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player\PlayerForm.designer.cs">
+      <DependentUpon>PlayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Russian.Designer.cs">
+      <DependentUpon>Russian.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Utils\AlphaBlendTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils\ApplicationSwitchWatcher.cs" />
+    <Compile Include="Utils\ComboboxItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\ContextSensitiveFramework.cs" />
+    <Compile Include="Utils\DragAndDrop\BaseDragAndDropSubProcessor.cs" />
+    <Compile Include="Utils\DragAndDrop\ChromeDragAndDropSubProcessor.cs" />
+    <Compile Include="Utils\DragAndDrop\CommonDragAndDropSubProcessor.cs" />
+    <Compile Include="Utils\DragAndDrop\DragAndDropProcessor.cs" />
+    <Compile Include="Utils\DragAndDrop\FireFoxDragAndDropSubProcessor.cs" />
+    <Compile Include="Utils\DragAndDrop\IDragAndDropSubProcessor.cs" />
+    <Compile Include="Utils\DragAndDrop\IEDragAndDropSubProcessor.cs" />
+    <Compile Include="Utils\DragAndDrop\SafariDragAndDropSubProcessor.cs" />
+    <Compile Include="Utils\ErrorTextProvider.cs" />
+    <Compile Include="Utils\Extensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\IconExtracter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\JSONHelper.cs" />
+    <Compile Include="Utils\Meesenger\FailNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\InfoWithDontShowNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\InfoWithDontShowNotification.Designer.cs">
+      <DependentUpon>InfoWithDontShowNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Meesenger\INotification.cs" />
+    <Compile Include="Utils\Meesenger\InprocessNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\InprocessNotification.Designer.cs">
+      <DependentUpon>InprocessNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Meesenger\NotificationBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\NotificationBase.Designer.cs">
+      <DependentUpon>NotificationBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Meesenger\SuccessNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\SuccessShareNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\SuccessShareNotification.Designer.cs">
+      <DependentUpon>SuccessShareNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Meesenger\TagsNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\TagsNotification.Designer.cs">
+      <DependentUpon>TagsNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Meesenger\Uploading\UploadingStrategies\FileUploadingResponse.cs" />
+    <Compile Include="Utils\Meesenger\Uploading\UploadingStrategies\LinkUploadingResponse.cs" />
+    <Compile Include="Utils\RembyConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\RembyMessenger.cs" />
+    <Compile Include="Utils\Meesenger\Uploading\Entities\FileEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\Uploading\Entities\FilesEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\Uploading\Entities\ImageLinkEntity.cs" />
+    <Compile Include="Utils\Meesenger\Uploading\Entities\LinkEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\Uploading\Entities\ScreenShootEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\Uploading\Entities\TextEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\Uploading\Entities\UploadEntityBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\Uploading\Entities\YouTubeVideoEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\Uploading\IUploadDispatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\Uploading\UploadDispatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Meesenger\Uploading\UploadingStrategies\BaseUploader.cs" />
+    <Compile Include="Utils\Meesenger\Uploading\UploadingStrategies\Drupal\DrupalUploader.cs" />
+    <Compile Include="Utils\Meesenger\Uploading\UploadingStrategies\IUploader.cs" />
+    <Compile Include="Utils\Meesenger\Uploading\UploadingStrategies\UploadEntityRole.cs" />
+    <Compile Include="Utils\Meesenger\Uploading\UploadingStrategies\TextUploadingResponse.cs" />
+    <Compile Include="Utils\TopWindowWatcher.cs" />
+    <Compile Include="Utils\win32.cs" />
+    <Compile Include="VideoEngine\CameraControl.cs" />
+    <Compile Include="VideoEngine\ScreenCapture.cs" />
+    <Compile Include="VideoEngine\ScreenCapture2.cs" />
+    <Compile Include="VideoEngine\ScreenCaptureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoEngine\ScreenCaptureForm.designer.cs">
+      <DependentUpon>ScreenCaptureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoEngine\W32Api.cs" />
+    <Compile Include="VideoEngine\WebcamSurface.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VideoEngine\WebcamSurface.Designer.cs">
+      <DependentUpon>WebcamSurface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ShareBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web\ShareBrowser.Designer.cs">
+      <DependentUpon>ShareBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ShareFacebook.cs" />
+    <Compile Include="Web\ShareRemby.cs" />
+    <Compile Include="Web\ShareTwitter.cs" />
+    <Compile Include="Web\LoginResponse.cs" />
+    <Compile Include="Web\WebLogin.cs" />
+    <Compile Include="Web\WebLogout.cs" />
+    <EmbeddedResource Include="Base\AutoCompleteTextBox.resx">
+      <DependentUpon>AutoCompleteTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\BarControl.resx">
+      <DependentUpon>BarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\BlueButton.resx">
+      <DependentUpon>BlueButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ButtonBase.resx">
+      <DependentUpon>ButtonBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ButtonBlack.resx">
+      <DependentUpon>ButtonBlack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ButtonCopy.resx">
+      <DependentUpon>ButtonCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ButtonOCR.resx">
+      <DependentUpon>ButtonOCR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ButtonOrange.resx">
+      <DependentUpon>ButtonOrange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ButtonPlayPause.resx">
+      <DependentUpon>ButtonPlayPause.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ButtonSave.resx">
+      <DependentUpon>ButtonSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\CaptureForm.resx">
+      <DependentUpon>CaptureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\CustomList.resx">
+      <DependentUpon>CustomList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\CustomListItem.resx">
+      <DependentUpon>CustomListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ExtendedProgressBar.resx">
+      <DependentUpon>ExtendedProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ExtendedRoundedTextBox.resx">
+      <DependentUpon>ExtendedRoundedTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\FirstUserExperience.resx">
+      <DependentUpon>FirstUserExperience.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\GrayButton.resx">
+      <DependentUpon>GrayButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\RembyBar.resx">
+      <DependentUpon>RembyBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\RembyDone.resx">
+      <DependentUpon>RembyDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\RembyLoginControl.resx">
+      <DependentUpon>RembyLoginControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\RembyProgressBar.resx">
+      <DependentUpon>RembyProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\RembyUploading.resx">
+      <DependentUpon>RembyUploading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\RembyVideo.resx">
+      <DependentUpon>RembyVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\RembyYouTubeControl.resx">
+      <DependentUpon>RembyYouTubeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\TagEditControl.resx">
+      <DependentUpon>TagEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\TagItem.resx">
+      <DependentUpon>TagItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\TagsCombo.resx">
+      <DependentUpon>TagsCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ToolStripBase.resx">
+      <DependentUpon>ToolStripBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\TopNav.resx">
+      <DependentUpon>TopNav.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\VideoPlayer.resx">
+      <DependentUpon>VideoPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\VideoRecorder.resx">
+      <DependentUpon>VideoRecorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\Options2.resx">
+      <DependentUpon>Options2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\TabButton.resx">
+      <DependentUpon>TabButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingTool\CustomColorDialog.resx">
+      <DependentUpon>CustomColorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingTool\DrawingSurface.resx">
+      <DependentUpon>DrawingSurface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingTool\Editors\PropertyEditor.resx">
+      <DependentUpon>PropertyEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="English.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>English.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\BaseFormOld.resx">
+      <DependentUpon>BaseFormOld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NotificationsAreaForm.resx">
+      <DependentUpon>NotificationsAreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFileUpload.resx">
+      <DependentUpon>FormFileUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHistory.resx">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormQuickTag.resx">
+      <DependentUpon>FormQuickTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormQuicktext.resx">
+      <DependentUpon>FormQuicktext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVideoPlayer.resx">
+      <DependentUpon>FormVideoPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormYouTubeLogin.resx">
+      <DependentUpon>FormYouTubeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GettingStarted.resx">
+      <DependentUpon>GettingStarted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InformationDialog\InfoBox.resx">
+      <DependentUpon>InfoBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InformationDialog\InfoBoxFail.resx">
+      <DependentUpon>InfoBoxFail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InformationDialog\InfoBoxInProcess.resx">
+      <DependentUpon>InfoBoxInProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InformationDialog\InfoBoxSimple.resx">
+      <DependentUpon>InfoBoxSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InformationDialog\InfoBoxSuccess.resx">
+      <DependentUpon>InfoBoxSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InformationDialog\InfoBoxSuccessShare.resx">
+      <DependentUpon>InfoBoxSuccessShare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InformationDialog\InfoBoxTag.resx">
+      <DependentUpon>InfoBoxTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OCRForm.resx">
+      <DependentUpon>OCRForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OneClickScreenShotWarning.resx">
+      <DependentUpon>OneClickScreenShotWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RembyScreenshotNew.resx">
+      <DependentUpon>RembyScreenshotNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDesign.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NewDesign.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player\PlayerForm.resx">
+      <DependentUpon>PlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Russian.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Russian.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\Meesenger\FailNotification.resx">
+      <DependentUpon>FailNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\Meesenger\InfoWithDontShowNotification.resx">
+      <DependentUpon>InfoWithDontShowNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\Meesenger\InprocessNotification.resx">
+      <DependentUpon>InprocessNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\Meesenger\NotificationBase.resx">
+      <DependentUpon>NotificationBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\Meesenger\SuccessNotification.resx">
+      <DependentUpon>SuccessNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\Meesenger\SuccessShareNotification.resx">
+      <DependentUpon>SuccessShareNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\Meesenger\TagsNotification.resx">
+      <DependentUpon>TagsNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoEngine\ScreenCaptureForm.resx">
+      <DependentUpon>ScreenCaptureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoEngine\WebcamSurface.resx">
+      <DependentUpon>WebcamSurface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\ShareBrowser.resx">
+      <DependentUpon>ShareBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="certificate code signing.pfx" />
+    <None Include="mscertificate2013_w_private_key.cer.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RembyClipper2_TemporaryKey.pfx" />
+    <None Include="Resources\small_r.ico" />
+    <None Include="Resources\stdbg.png" />
+    <None Include="Resources\Button_copy.png" />
+    <None Include="Resources\FTUE-video.png" />
+    <None Include="Resources\corner_right1.png" />
+    <None Include="Resources\corner_left1.png" />
+    <None Include="Resources\editor_video.png" />
+    <None Include="Resources\magnify.png" />
+    <None Include="Resources\uploading_image_anim_win.gif" />
+    <None Include="Resources\uploading_video_anim_win.gif" />
+    <None Include="Resources\FullView.png" />
+    <None Include="Resources\FullClose.png" />
+    <None Include="Resources\ErrorBG.png" />
+    <None Include="Resources\WebcamClose.png" />
+    <None Include="Resources\WebcamZoomIn.png" />
+    <None Include="Resources\WebcamZoomOut.png" />
+    <None Include="Resources\mute.png" />
+    <None Include="Resources\mute_off.png" />
+    <None Include="Resources\Webcam.png" />
+    <None Include="Resources\Webcam-off.png" />
+    <None Include="Resources\Artwork_DesignService_fedora-spinner.gif" />
+    <None Include="Resources\Icon_settings.png" />
+    <None Include="Resources\TabControlBG.png" />
+    <None Include="Resources\TabControl_Active.png" />
+    <None Include="Resources\TabControl_Hover.png" />
+    <None Include="Resources\TabControl_Simple.png" />
+    <None Include="Resources\TabControl_sep.png" />
+    <None Include="Resources\TopNavBG.png" />
+    <None Include="Resources\small_r2.png" />
+    <None Include="Resources\btn_close_icon_off.gif" />
+    <None Include="Resources\iconUpload.gif" />
+    <None Include="Resources\RembyLogo.png" />
+    <None Include="Resources\dragndrop.png" />
+    <None Include="Resources\keyboard_vista_archigraphs.png" />
+    <None Include="Resources\editor.png" />
+    <None Include="Resources\WebcamPIP.PNG" />
+    <None Include="Resources\small_r16.png" />
+    <None Include="Resources\remby-logo-book-text-v1.png" />
+    <None Include="Resources\btn_close_icon_off1.gif" />
+    <None Include="Resources\small_facebook_icon.png" />
+    <None Include="Resources\twitter_icon.jpg" />
+    <None Include="Resources\screenshot.png" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\text.png" />
+    <None Include="Resources\icon_google_small.gif" />
+    <None Include="Resources\toolbar.PNG" />
+    <None Include="Resources\youtube-logo.jpg" />
+    <None Include="Resources\all.png" />
+    <None Include="Resources\screenshots.png" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\files.png" />
+    <None Include="Resources\text1.png" />
+    <None Include="Resources\videos.png" />
+    <Content Include="clipper32x32.ico" />
+    <None Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\icon_screenshots1.png" />
+    <None Include="Resources\icon_video2.png" />
+    <None Include="Resources\cm_icon_settings1.png" />
+    <None Include="Resources\btn_icon_copy.png" />
+    <None Include="Resources\Progress_end_gray.png" />
+    <None Include="Resources\Progress_start_gray.png" />
+    <None Include="Resources\btn_ocr.png" />
+    <None Include="Resources\btn_icon_save.png" />
+    <None Include="Resources\video_btn_pause.png" />
+    <None Include="Resources\video_btn_play.png" />
+    <None Include="Resources\divider1.png" />
+    <None Include="Resources\btn_icon_mic.png" />
+    <None Include="Resources\btn_icon_mic_disable.png" />
+    <None Include="Resources\btn_icon_cam1.png" />
+    <None Include="Resources\btn_icon_cam_disable.png" />
+    <None Include="Resources\srart_btn.png" />
+    <None Include="Resources\stop_btn.png" />
+    <None Include="Resources\remby_icon_big_backless.png" />
+    <None Include="Resources\clipper_icon.png" />
+    <None Include="Resources\share_icon_google_s.png" />
+    <None Include="Resources\share_icon_facebook_s.png" />
+    <None Include="Resources\share_icon_twitter_s.png" />
+    <None Include="Resources\icon_refresh.png" />
+    <None Include="Resources\RefreshAnimated.gif" />
+    <None Include="Resources\icon_save.png" />
+    <None Include="Resources\mute1.png" />
+    <None Include="Resources\mute_off1.png" />
+    <None Include="Resources\webcam1.png" />
+    <None Include="Resources\webcam_off.png" />
+    <None Include="Resources\icon_copy.png" />
+    <None Include="Resources\Clipper16x16.ico" />
+    <None Include="Resources\clipper32x32.ico" />
+    <None Include="Resources\border_color.png" />
+    <None Include="Resources\border_size.png" />
+    <None Include="Resources\clone.png" />
+    <None Include="Resources\fill_color.png" />
+    <None Include="Resources\font.png" />
+    <None Include="Resources\icon_text.png" />
+    <None Include="Resources\opacity.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\reorder.png" />
+    <None Include="Resources\text_color.png" />
+    <None Include="Resources\icon_arrow.png" />
+    <None Include="Resources\icon_bordercolor.png" />
+    <None Include="Resources\icon_circle.png" />
+    <None Include="Resources\icon_fillcolor.png" />
+    <None Include="Resources\icon_square.png" />
+    <None Include="Resources\tick1.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\hourglass.png" />
+    <None Include="Resources\recycle.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\small_loader_icon.gif" />
+    <None Include="Resources\blogs.png" />
+    <None Include="Resources\draw_eraser.png" />
+    <None Include="Resources\file_extension_png.png" />
+    <None Include="Resources\file_extension_wps.png" />
+    <None Include="Resources\file_extension_amr.png" />
+    <None Include="Resources\file_extension_cbr.png" />
+    <None Include="Resources\file_extension_ps.png" />
+    <None Include="Resources\file_extension_asx.png" />
+    <None Include="Resources\file_extension_bat.png" />
+    <None Include="Resources\file_extension_vcd.png" />
+    <None Include="Resources\file_extension_mp2.png" />
+    <None Include="Resources\file_extension_ses.png" />
+    <None Include="Resources\file_extension_lnk.png" />
+    <None Include="Resources\file_extension_ram.png" />
+    <None Include="Resources\file_extension_ogg.png" />
+    <None Include="Resources\file_extension_mid.png" />
+    <None Include="Resources\file_extension_eml.png" />
+    <None Include="Resources\file_extension_m4v.png" />
+    <None Include="Resources\file_extension_ss.png" />
+    <None Include="Resources\file_extension_mcd.png" />
+    <None Include="Resources\file_extension_log.png" />
+    <None Include="Resources\file_extension_ifo.png" />
+    <None Include="Resources\file_extension_mswmm.png" />
+    <None Include="Resources\file_extension_ptb.png" />
+    <None Include="Resources\file_extension_sea.png" />
+    <None Include="Resources\file_extension_qbw.png" />
+    <None Include="Resources\file_extension_hqx.png" />
+    <None Include="Resources\file_extension_ttf.png" />
+    <None Include="Resources\file_extension_cab.png" />
+    <None Include="Resources\file_extension_pst.png" />
+    <None Include="Resources\file_extension_html.png" />
+    <None Include="Resources\file_extension_divx.png" />
+    <None Include="Resources\file_extension_m4p.png" />
+    <None Include="Resources\file_extension_ace.png" />
+    <None Include="Resources\file_extension_cdl.png" />
+    <None Include="Resources\file_extension_jpeg.png" />
+    <None Include="Resources\file_extension_msi.png" />
+    <None Include="Resources\file_extension_aiff.png" />
+    <None Include="Resources\file_extension_rtf.png" />
+    <None Include="Resources\file_extension_qxd.png" />
+    <None Include="Resources\file_extension_fla.png" />
+    <None Include="Resources\file_extension_tgz.png" />
+    <None Include="Resources\file_extension_gz.png" />
+    <None Include="Resources\file_extension_7z.png" />
+    <None Include="Resources\file_extension_m4b.png" />
+    <None Include="Resources\file_extension_cda.png" />
+    <None Include="Resources\file_extension_iso.png" />
+    <None Include="Resources\file_extension_dmg.png" />
+    <None Include="Resources\file_extension_dss.png" />
+    <None Include="Resources\file_extension_dvf.png" />
+    <None Include="Resources\file_extension_htm.png" />
+    <None Include="Resources\file_extension_jar.png" />
+    <None Include="Resources\file_extension_chm.png" />
+    <None Include="Resources\file_extension_mdb.png" />
+    <None Include="Resources\file_extension_rm.png" />
+    <None Include="Resources\file_extension_indd.png" />
+    <None Include="Resources\file_extension_asf.png" />
+    <None Include="Resources\file_extension_swf.png" />
+    <None Include="Resources\file_extension_mpeg.png" />
+    <None Include="Resources\file_extension_qbb.png" />
+    <None Include="Resources\file_extension_gif.png" />
+    <None Include="Resources\file_extension_dwg.png" />
+    <None Include="Resources\file_extension_pub.png" />
+    <None Include="Resources\file_extension_aif.png" />
+    <None Include="Resources\file_extension_bmp.png" />
+    <None Include="Resources\file_extension_rmvb.png" />
+    <None Include="Resources\file_extension_txt.png" />
+    <None Include="Resources\file_extension_ai.png" />
+    <None Include="Resources\file_extension_cdr.png" />
+    <None Include="Resources\file_extension_eps.png" />
+    <None Include="Resources\file_extension_sit.png" />
+    <None Include="Resources\file_extension_sitx.png" />
+    <None Include="Resources\file_extension_wma.png" />
+    <None Include="Resources\file_extension_psd.png" />
+    <None Include="Resources\file_extension_mov.png" />
+    <None Include="Resources\file_extension_wav.png" />
+    <None Include="Resources\file_extension_tif.png" />
+    <None Include="Resources\file_extension_mpg.png" />
+    <None Include="Resources\file_extension_exe.png" />
+    <None Include="Resources\file_extension_jpg.png" />
+    <None Include="Resources\file_extension_zip.png" />
+    <None Include="Resources\file_extension_dat.png" />
+    <None Include="Resources\file_extension_thm.png" />
+    <None Include="Resources\file_extension_wmv.png" />
+    <None Include="Resources\file_extension_bup.png" />
+    <None Include="Resources\file_extension_xpi.png" />
+    <None Include="Resources\file_extension_tmp.png" />
+    <None Include="Resources\file_extension_m4a.png" />
+    <None Include="Resources\file_extension_bin.png" />
+    <None Include="Resources\file_extension_pps.png" />
+    <None Include="Resources\file_extension_doc.png" />
+    <None Include="Resources\file_extension_vob.png" />
+    <None Include="Resources\file_extension_rar.png" />
+    <None Include="Resources\file_extension_dll.png" />
+    <None Include="Resources\file_extension_xls.png" />
+    <None Include="Resources\file_extension_3gp.png" />
+    <None Include="Resources\file_extension_flv.png" />
+    <None Include="Resources\file_extension_mp4.png" />
+    <None Include="Resources\file_extension_pdf.png" />
+    <None Include="Resources\file_extension_torrent.png" />
+    <None Include="Resources\page_gear.png" />
+    <None Include="Resources\emotion_wink.png" />
+    <None Include="Resources\user_silhouette.png" />
+    <None Include="Resources\page_edit.png" />
+    <None Include="Resources\exclamation.png" />
+    <None Include="Resources\SimpleArrow.png" />
+    <None Include="Resources\annotate.png" />
+    <None Include="Resources\annotateReverse.png" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\icon_arrow_transparent.png" />
+    <None Include="Resources\icon_square_transparent.png" />
+    <None Include="Resources\information.png" />
+    <Content Include="tessdata\eng.DangAmbigs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tessdata\eng.freq-dawg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tessdata\eng.inttemp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tessdata\eng.normproto">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tessdata\eng.pffmtable">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tessdata\eng.unicharset">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tessdata\eng.user-words">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tessdata\eng.word-dawg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_simple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_video1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black_button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange_button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_copy_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OCR_Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OCR_Button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Photo_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Video_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crosshair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Semitransbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_r_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_r_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_r_photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_r_video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_r_close_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_r_photo_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_r_video_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_pause_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_play_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Progress_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Progress_end_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Progress_end_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Progress_start_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Progress_start_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Progress_step.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Progress_step_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecordingBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StopButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="AACDecoder.NET">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="AACEncoder.NET">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="AForge">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="AForge.Imaging">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="AForge.Math">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Google.GData.Client">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Google.GData.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Google.GData.YouTube">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="H264Decoder.NET">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="H264Encoder.NET">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ICSharpCode.SharpZipLib">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="JsonExSerializer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Localization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ManagedWinapi">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MediaBase">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MP4Reader.NET">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MP4Toolkit">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MPEG4Decoder.NET">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MPEG4Encoder.NET">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="NDde">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="RTP.NET">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="StreamTools.NET">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="tessnet2_32">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Localization\Localization.csproj">
+      <Project>{E0C99D4B-FAA4-4B79-A25D-5EACDB9D1D04}</Project>
+      <Name>Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RembyUninstaller\RembyUninstaller.csproj">
+      <Project>{A3BBACB1-B5B7-4553-B3F8-C8A048C3A97E}</Project>
+      <Name>RembyUninstaller</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <UsingTask TaskName="SmartAssembly.MSBuild.Tasks.Build" AssemblyName="SmartAssembly.MSBuild.Tasks, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7f465a1c156d4d57" />
+  <Target Name="AfterBuild" Condition=" '$(Configuration)' == 'Release' ">
+    <SmartAssembly.MSBuild.Tasks.Build ProjectFile="Obfuscation\RembyCollector_own.saproj" OverwriteAssembly="True" />
+    <Copy SourceFiles="bin\Release\RembyCollector.exe" DestinationFiles="obj\x86\Release\RembyCollector.exe" />
+    <!--    <Copy SourceFiles="d:\Work\Remby\Remby2\Remby\RembyClipper2\RembyClipper2\bin\Release\RembyCollector.pdb" DestinationFiles="D:\Work\Remby\Remby2\Remby\RembyClipper2\RembyClipper2\obj\x86\Release\RembyCollector.pdb" />-->
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>"c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin\signtool.exe" sign /v /ac $(SolutionDir)CodeSign\MSCV-VSClass3.cer /s my /n "Remby Sweden AB" /t http://timestamp.verisign.com/scripts/timstamp.dll $(TargetPath)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

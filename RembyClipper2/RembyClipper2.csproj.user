@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>D:\Work\Remby\Mercurial\collector\trunk\publish\|ftp://192.168.99.19/remby/www/apps/|ftp://ftp.remby.com/remby/staging/apps/|ftp://192.168.99.19/remby/staging/apps/|\\asus\clipperInstallFolder\</PublishUrlHistory>
+    <InstallUrlHistory>http://dl.remby.com/apps/win/collector/stable/|http://remby.com/apps/|http://staging.remby.com/apps/|http://www.remby.com/apps/</InstallUrlHistory>
+    <SupportUrlHistory>http://www.remby.com/help#help-collect|http://www.remby.com</SupportUrlHistory>
+    <UpdateUrlHistory>\\asus\clipperInstallFolder\</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>true</VerifyUploadedFiles>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <StartAction>Project</StartAction>
+    <StartProgram>C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe</StartProgram>
+  </PropertyGroup>
+</Project>
